@@ -1,0 +1,11 @@
+Checking for factorability as (2^k)*(3^l)*(5^m)
+[Version 4]
+
+Divisibility Check [popcnt]
+Fast division implementation
+Silent Mode. Timing...
+
+
+510 [0, 1048575] #1048575
+T: 313283, microseconds
+

@@ -1,0 +1,48 @@
+01.MOD_235 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  1. Проверка за делимост на 2, 3 и 5 с използване на "Детерминиран краен автомат" (DFA)
+  2. Проверка за делимост на 2, 3 и 5 с използване на "Детерминиран краен автомат" (DFA)
+     Съкращаване броя на циклите, започвайки от най-старшия ненулев бит.
+     Техника с отстраняване на преходите.
+  3. Комбинирана проверка за делимост на 2, 3 и 5
+  +++
+  4.GCD
+    1. НОД - отворена функция
+    2. НОД - библиотечен вариант std::gcd()
+  +++
+  5.DIV_CHK
+    DIV_CHK_3 - Divisibility Check by 3
+      1. Fast divisibility by 3 check
+         Count the number of non-zero odd positions bits and non-zero even position bits from the right. 
+         If their difference is divisible by 3, then the number is divisible by 3.
+      2.POPCNT
+    DIV_CHK_5 - Divisibility Check by 5
+      1. Fast divisibility by 5 check
+         Convert the number to base 4 (this is trivial by simply combining pairs of bits). 5 in base 4 is 11. 
+         The rule for divisibility by 11 is that you add all the odd digits and all the even digits and subtract one from the other. 
+         If the result is divisible by 11 (which remember is 5), then it's divisible by 11 (which remember is 5).
+      2.POPCNT
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+02.F_235  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  DIV
+    1.ASM - Integer Division by x86 div instruction
+    2.CPP - Integer Division by std::div()
+    DIV_35
+      1. Fast Integer Division by 3
+      2. Fast Integer Division by 3 and 5
+  +++    
+  F_2 Fictorizes <src> as k*(2^exp)
+  +++
+  F_3 Fictorizes <src> as k*(3^exp)
+  +++
+  F_5 Fictorizes <src> as k*(5^exp)
+  +++
+  F_235
+    1. Checking for factorability as (2^k)*(3^l)*(5^m)
+    2. Checking for factorability as (2^k)*(3^l)*(5^m) with Logs and Profiling
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+03.HN_NXT ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  1.
+  2.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

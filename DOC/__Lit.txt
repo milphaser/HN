@@ -1,0 +1,51 @@
++++
+∆. ¿Ò‡Í. œ–Œ√–¿ÃÃ»–Œ¬¿Õ»≈ »√– » √ŒÀŒ¬ŒÀŒÃŒ . 1990
+√ÓÎÓ‚ÓÎÓÏÍ‡ (Puzzle) 5 (ÒÚ. 24-25, 111)
+https://www.amazon.com/Jeux-casse-te%CC%82te-a%CC%80-programmer-French/dp/2040157638/ref=sr_1_6?crid=1BGFH6YY1VCQS&keywords=jacques+arsac&qid=1695714135&sprefix=jacques+arsac%2Caps%2C188&sr=8-6
++++
+Arsac Jacques (1985). Jeux et casse-tete a programmer (French Edition). Dunod, Paris. ISBN 2-04-015763-8
+Dijkstra Edsger (1976). A Discipline of Programming. Prentice-Hall, Inc., NJ. ISBN 0-13-215871-X
+Scheinerman Edward (2006). C++ for Mathematicians. An introduction for Students and Professionals. Chapman & Hall/CRC. ISBN 1-58488-584-X
+Loukantchevsky, M. (2022). The Hobby Time Training Approach. In: Proceedings of the University of Ruse - 2022, vol 61, book 3.2, ISSN 2603-4123
+Loukantchevsky, M. (2023). Yet Another Parallelism Within the ìHobby Time Trainingî. In: Yang, XS., Sherratt, R.S., Dey, N., Joshi, A. (eds) Proceedings of Eighth International Congress on Information and Communication Technology. ICICT 2023. Lecture Notes in Networks and Systems, vol 694. Springer, Singapore. https://doi.org/10.1007/978-981-99-3091-3_19
+Warren Henry (2010). Hacker's Delight. 2nd Ed. Addison-Wesley. ISBN 0-201-91465-4
+Weisstein, Eric W. "Smooth Number." From MathWorld--A Wolfram Web Resource. https://mathworld.wolfram.com/SmoothNumber.html
++++
+Regular Number
+https://en.wikipedia.org/wiki/Regular_number
++++
+https://en.wikipedia.org/wiki/Smooth_number
++++
+Hamming numbers
+https://www.rosettacode.org/wiki/Hamming_numbers
++++
+Ugly Numbers
+https://www.geeksforgeeks.org/ugly-numbers/
++++
+5-smooth numbers
+https://oeis.org/A051037
++++
+Sequence of Hamming Numbers/Hamming Sequence/Sequence of 5-smooth numbers/Sequence of regular numbers
+https://www.wolframalpha.com/input?i=sequence+of+hamming+numbers
++++
+Music Theory
+https://en.wikipedia.org/wiki/Regular_number#Music_theory
++++
+Dynamic Programming (DP) Tutorial with Problems
+https://www.bing.com/search?pglt=513&q=ugly+numbers&cvid=ebf43fc7a1264c78a2cdad3105643419&gs_lcrp=EgZjaHJvbWUqBAgAEAAyBAgAEAAyBAgBEAAyBAgCEAAyBAgDEAAyBAgEEAAyBAgFEAAyBAgGEAAyBAgHEAAyBAgIEADSAQg3MDg5ajBqMagCALACAA&FORM=ANNTA1&PC=U531
++++
+Design DFA accepting binary strings divisible by a number 'n'
+https://stackoverflow.com/questions/21897554/design-dfa-accepting-binary-strings-divisible-by-a-number-n
++++
+Pattern for all the binary chains divisible by 5
+https://math.stackexchange.com/questions/4027896/pattern-for-all-the-binary-chains-divisible-by-5
++++
+Algorithm in hardware to find out if number is divisible by five
+https://stackoverflow.com/questions/18473730/algorithm-in-hardware-to-find-out-if-number-is-divisible-by-five
++++
+Divisibility rule
+https://en.wikipedia.org/wiki/Divisibility_rule
++++
+Euclidean division
+https://en.wikipedia.org/wiki/Euclidean_division#Division_theorem
++++
