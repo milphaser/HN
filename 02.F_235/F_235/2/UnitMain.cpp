@@ -259,7 +259,7 @@ BOOL div_chk_3(DWORD src)
 {
 	BOOL rslt = false;
 
-	//  Short Code Diversity Table
+	//  Short Code Divisibility Table
 	const DWORD scdt = 0x00009249;
 	// FEDC BA98 7654 3210
 	// 1001 0010 0100 1001
@@ -331,7 +331,7 @@ BOOL div_chk_5(DWORD src)
 {
 	BOOL rslt = false;
 
-	//  Short Code Diversity Table
+	//  Short Code Divisibility Table
 	const DWORD scdt = 0x00008421;
 	// FEDC BA98 7654 3210
 	// 1000 0100 0010 0001
@@ -434,10 +434,10 @@ int mod_3(DWORD src)
 		}
 
 	#if defined __F_35_BE2_MOD__
-		//  Short Code Transition Table
+		//  Compressed Transition Table
 		const DWORD tt3 = 0x00000858;
-		// 10 00 01 | 01 10 00                      <<<
-		// tt3[2][3] = {{0, 2, 1}, {1, 0, 2}};      >>>
+		// MSB {10 00 01} {01 10 00} LSB		<<<
+		// tt3[2][3] = {{0, 2, 1}, {1, 0, 2}};	>>>
 		__asm
 		{
 			//  Check if mask != 0
@@ -553,9 +553,9 @@ int mod_5(DWORD src)
 		}
 
 	#if defined __F_35_BE2_MOD__
-		//  Short Code Transition Table
+		//  Compressed Transition Table
 		const DWORD tt5 = 0x220CB310;
-		// 100 010 000 011 001 | 011 001 100 010 000            <<<
+		// MSB {100 010 000 011 001} {011 001 100 010 000} LSB	<<<
 		// tt5[2][5] = {{ 0, 2, 4, 1, 3}, { 1, 3, 0, 2, 4}};    >>>
 		__asm
 		{
