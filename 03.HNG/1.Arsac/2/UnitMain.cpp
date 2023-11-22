@@ -35,7 +35,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	   << SCALE << ".txt";
 
 	std::wcout << L"Generating of NHS of Scale #" << SCALE << std::endl;
-	std::wcout << L"Please, wait..." << SCALE << std::endl << std::endl;
+	std::wcout << L"Please, wait..." << std::endl << std::endl;
 
 	/////////////////////////////////////////////////////////////////////////
 	//  1. Generate a HNS of predefined SCALE
