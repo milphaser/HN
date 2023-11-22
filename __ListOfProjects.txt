@@ -21,6 +21,8 @@
          The rule for divisibility by 11 is that you add all the odd digits and all the even digits and subtract one from the other. 
          If the result is divisible by 11 (which remember is 5), then it's divisible by 11 (which remember is 5).
       2.POPCNT
+
+Status: Completed
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 02.F_235  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -40,9 +42,29 @@
   F_235
     1. Checking for factorability as (2^k)*(3^l)*(5^m)
     2. Checking for factorability as (2^k)*(3^l)*(5^m) with Logs and Profiling
+
+Status: Completed
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-03.HN_NXT ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-  1.
-  2.
+03.HNG +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  1.Arsac
+  The Arsac's idea implementation:
+  {Dynamic Programming}
+    1. Generating the next Hamming Number to the previously generated HNS
+      Assumptions:
+      - the input sequence is guaranteed to be of type HNS, and this is not checked
+      - the members of the sequence are restricted to the positive int
+
+      Status: Completed
+
+    2. Generating the first N Hamming Numbers, where N is a predefined value
+      Assumptions:
+      - the members of the sequence are restricted to the positive int
+    
+      Status: Completed
+  +++
+  2.Triplex
+  Generating the next Hamming Number based on the last characteristic triplets
+
+Status: Uncompleted
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

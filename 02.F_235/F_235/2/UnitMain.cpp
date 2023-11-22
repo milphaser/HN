@@ -434,7 +434,7 @@ int mod_3(DWORD src)
 		}
 
 	#if defined __F_35_BE2_MOD__
-		//  Compressed Transition Table
+		//  Compressed State Transition Table
 		const DWORD tt3 = 0x00000858;
 		// MSB {10 00 01} {01 10 00} LSB		<<<
 		// tt3[2][3] = {{0, 2, 1}, {1, 0, 2}};	>>>
@@ -481,7 +481,7 @@ int mod_3(DWORD src)
 	#elif defined __F_35_BE_MOD__
 		while(mask != 0)
 		{
-			//  Transition Table
+			//  State Transition Table
 			static int tt3[2][3] = {{0, 2, 1}, {1, 0, 2}};
 			int inx = 0;
 			__asm
@@ -553,7 +553,7 @@ int mod_5(DWORD src)
 		}
 
 	#if defined __F_35_BE2_MOD__
-		//  Compressed Transition Table
+		//  Compressed State Transition Table
 		const DWORD tt5 = 0x220CB310;
 		// MSB {100 010 000 011 001} {011 001 100 010 000} LSB	<<<
 		// tt5[2][5] = {{ 0, 2, 4, 1, 3}, { 1, 3, 0, 2, 4}};    >>>
@@ -603,7 +603,7 @@ int mod_5(DWORD src)
 	#elif defined __F_35_BE_MOD__
 		while(mask != 0)
 		{
-			//  Transition Table
+			//  State Transition Table
 			static int tt5[2][5] = {{ 0, 2, 4, 1, 3}, { 1, 3, 0, 2, 4}};
 			int inx = 0;
 			__asm
