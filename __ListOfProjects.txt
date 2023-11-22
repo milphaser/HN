@@ -33,11 +33,11 @@ Status: Completed
       1. Fast Integer Division by 3
       2. Fast Integer Division by 3 and 5
   +++    
-  F_2 Fictorizes <src> as k*(2^exp)
+  F_2 Factorizes <src> as k*(2^exp)
   +++
-  F_3 Fictorizes <src> as k*(3^exp)
+  F_3 Factorizes <src> as k*(3^exp)
   +++
-  F_5 Fictorizes <src> as k*(5^exp)
+  F_5 Factorizes <src> as k*(5^exp)
   +++
   F_235
     1. Checking for factorability as (2^k)*(3^l)*(5^m)
