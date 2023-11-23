@@ -49,7 +49,7 @@ namespace HN
 		if (it != src.end())
 		{
 			if(tPreBase == std::floor(fPreBase))
-			{   //  the last HN is divisible by the factor f
+			{
 				it++;
 			}
 

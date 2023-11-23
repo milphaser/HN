@@ -59,7 +59,7 @@ bool HN::__get_HN_nxt(const std::vector<int>& src, const HN::Factor& f, int& dst
 	if (it != src.end())
 	{
 		if(intPreBase == std::floor(fPreBase))
-		{   //  the last HN is divisible by the factor f
+		{
 			it++;
 		}
 

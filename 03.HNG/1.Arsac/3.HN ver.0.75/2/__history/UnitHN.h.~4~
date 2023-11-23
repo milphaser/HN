@@ -20,6 +20,8 @@ namespace HN
 		f_2 = 2, f_3 = 3, f_5 = 5
 	};
 
+	const std::wstring inline ver(void)     {return L"0.76";}
+
 	template<class T> bool __get_HN_nxt(const std::vector<T>& src, const HN::Factor& f, T& dst)
 	//  Generates a proposal of the next HN (Arsac's Idea)
 	//  by one of the three factors (2, 3 or 5)
@@ -49,7 +51,7 @@ namespace HN
 		if (it != src.end())
 		{
 			if(tPreBase == std::floor(fPreBase))
-			{   //  the last HN is divisible by the factor f
+			{
 				it++;
 			}
 
