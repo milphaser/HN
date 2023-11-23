@@ -1,12 +1,13 @@
 //---------------------------------------------------------------------------
 //  Hamming Number Namespace
-//  ver. 0.70
+//  ver. 0.75
+//  templatized
 //---------------------------------------------------------------------------
 #include <algorithm>
 //---------------------------------------------------------------------------
 #include "UnitHN.h"
 //---------------------------------------------------------------------------
-bool HN::__get_HN_nxt(const std::vector<int>& src, int& dst)
+template<class T> bool __get_HN_nxt(const std::vector<T>& src, T& dst)
 //  Generates next HN at the end of the HNS (Arsac's Idea)
 //  by merging of three HN proposal
 //  Input:
@@ -30,7 +31,7 @@ bool HN::__get_HN_nxt(const std::vector<int>& src, int& dst)
 	return boolResult;
 }
 //---------------------------------------------------------------------------
-bool HN::__get_HN_nxt(const std::vector<int>& src, const HN::Factor& f, int& dst)
+template<class T> bool __get_HN_nxt(const std::vector<T>& src, const Factor& f, T& dst)
 //  Generates a proposal of the next HN (Arsac's Idea)
 //  by one of the three factors (2, 3 or 5)
 //  Input:

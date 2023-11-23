@@ -1,12 +1,13 @@
 //---------------------------------------------------------------------------
 //  Hamming Number Namespace
-//  ver. 0.70
+//  ver. 0.75
+//  templatized
 //---------------------------------------------------------------------------
 #include <algorithm>
 //---------------------------------------------------------------------------
 #include "UnitHN.h"
 //---------------------------------------------------------------------------
-bool HN::__get_HN_nxt(const std::vector<int>& src, int& dst)
+template<class T> bool __get_HN_nxt(const std::vector<T>& src, T& dst)
 //  Generates next HN at the end of the HNS (Arsac's Idea)
 //  by merging of three HN proposal
 //  Input:
@@ -16,21 +17,21 @@ bool HN::__get_HN_nxt(const std::vector<int>& src, int& dst)
 //  - false, if error
 //  - true, if no error
 {
-	int intHN_2, intHN_3, intHN_5;
+	T tHN_2, tHN_3, tHN_5;
 
 	//  Generate three HN proposals
-	bool boolResult = HN::__get_HN_nxt(src, HN::Factor::f_2, intHN_2);
-	boolResult = boolResult && HN::__get_HN_nxt(src, HN::Factor::f_3, intHN_3);
-	boolResult = boolResult && HN::__get_HN_nxt(src, HN::Factor::f_5, intHN_5);
+	bool boolResult = HN::__get_HN_nxt<T>(src, HN::Factor::f_2, tHN_2);
+	boolResult = boolResult && HN::__get_HN_nxt<T>(src, HN::Factor::f_3, tHN_3);
+	boolResult = boolResult && HN::__get_HN_nxt<T>(src, HN::Factor::f_5, tHN_5);
 
 	//  Merge the three HN proposals
-	dst = std::min(intHN_2, intHN_3);
-	dst = std::min(dst, intHN_5);
+	dst = std::min(tHN_2, tHN_3);
+	dst = std::min(dst, tHN_5);
 
 	return boolResult;
 }
 //---------------------------------------------------------------------------
-bool HN::__get_HN_nxt(const std::vector<int>& src, const HN::Factor& f, int& dst)
+template<class T> bool __get_HN_nxt(const std::vector<T>& src, const HN::Factor& f, T& dst)
 //  Generates a proposal of the next HN (Arsac's Idea)
 //  by one of the three factors (2, 3 or 5)
 //  Input:
@@ -52,13 +53,13 @@ bool HN::__get_HN_nxt(const std::vector<int>& src, const HN::Factor& f, int& dst
 	bool boolResult = false;
 
 	float fPreBase = src.back()/static_cast<float>(f);
-	int intPreBase = std::ceil(fPreBase);
+	T tPreBase = std::ceil(fPreBase);
 
 	auto it = std::find_if(src.begin(), src.end(),
-		[&intPreBase](const int& item) {return item >= intPreBase;});
+		[&tPreBase](const T& item) {return item >= tPreBase;});
 	if (it != src.end())
 	{
-		if(intPreBase == std::floor(fPreBase))
+		if(tPreBase == std::floor(fPreBase))
 		{
 			it++;
 		}
@@ -66,7 +67,7 @@ bool HN::__get_HN_nxt(const std::vector<int>& src, const HN::Factor& f, int& dst
 		if(it != src.end())
 		{
 			auto aHN_Base = *it;
-			dst = aHN_Base * static_cast<int>(f);
+			dst = aHN_Base * static_cast<T>(f);
 			boolResult = true;
 		}
 	}

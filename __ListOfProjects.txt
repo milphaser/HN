@@ -53,13 +53,22 @@ Status: Completed
     1. Generating the next Hamming Number to the previously generated HNS
       Assumptions:
       - the input sequence is guaranteed to be of type HNS, and this is not checked
-      - the members of the sequence are restricted to the positive int
+      - the members of the sequence are restricted to the positive int (32 bits)
 
       Status: Completed
 
     2. Generating the first N Hamming Numbers, where N is a predefined value
+      Hamming Number Namespace ver. 0.70
       Assumptions:
-      - the members of the sequence are restricted to the positive int
+      - the members of the sequence are restricted to the positive int (32 bits)
+    
+      Status: Completed
+
+    3. Generating the first N Hamming Numbers, where N is a predefined value
+       Hamming Number Namespace ver. 0.75 templatized
+       
+       1. The members of the sequence are restricted to the positive int (32 bits)
+       2. the members of the sequence are restricted to the positive long long (64 bits)
     
       Status: Completed
   +++
