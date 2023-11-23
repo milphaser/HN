@@ -48,7 +48,8 @@ Status: Completed
 
 03.HNG +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   1.Arsac
-  The Arsac's idea implementation:
+  Jacques Arsac's idea modern C++ implementation
+  https://www.amazon.com/Jeux-casse-te%CC%82te-a%CC%80-programmer-French/dp/2040157638?ref_=ast_author_dp
   {Dynamic Programming}
     1. Generating the next Hamming Number to the previously generated HNS
       Assumptions:

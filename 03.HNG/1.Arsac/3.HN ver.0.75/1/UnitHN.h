@@ -2,6 +2,9 @@
 //  Hamming Number Namespace
 //  ver. 0.75
 //  templatized
+//
+//	Idea of Jacques Arsac
+//	Implementation 2023 by Milen Loukantchevsky
 //---------------------------------------------------------------------------
 #ifndef UnitHNH
 #define UnitHNH
@@ -12,9 +15,6 @@
 //---------------------------------------------------------------------------
 namespace HN
 {
-	const std::wstring FILE_NAME_IN 	= L"..\\..\\Logs\\HNS_in.txt";
-	const std::wstring FILE_NAME_OUT 	= L"..\\..\\Logs\\HNS_out.txt";
-
 	enum class Factor
 	{
 		f_2 = 2, f_3 = 3, f_5 = 5

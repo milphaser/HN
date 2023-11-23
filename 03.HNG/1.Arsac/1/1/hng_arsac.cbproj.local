@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899.12.30 00:00:00.000.431,C:\Z.HOBBY TIME\50.Puzzles\HN\03.HN_NXT\1.Arsac\1\hn_nxt_arsac.cbproj=C:\Z.HOBBY TIME\50.Puzzles\HN\03.HN_NXT\1.Arsac\1\hng_arsac.cbproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.853,C:\Z.HOBBY TIME\50.Puzzles\HN\03.HN_NXT\1.Arsac\1\Temp.cbproj=C:\Z.HOBBY TIME\50.Puzzles\HN\03.HN_NXT\1.Arsac\1\hn_nxt_arsac.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.853,C:\Z.HOBBY TIME\50.Puzzles\HN\03.HN_NXT\1.Arsac\1\hn_nxt_arsac.cbproj=C:\Z.HOBBY TIME\50.Puzzles\HN\03.HN_NXT\1.Arsac\1\Temp.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.431,C:\Z.HOBBY TIME\50.Puzzles\HN\03.HN_NXT\1.Arsac\1\hng_arsac.cbproj=C:\Z.HOBBY TIME\50.Puzzles\HN\03.HN_NXT\1.Arsac\1\hn_nxt_arsac.cbproj</Transaction>
   </Transactions>
 </BorlandProject>
