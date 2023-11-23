@@ -1,6 +1,6 @@
 //---------------------------------------------------------------------------
 //  Hamming Number Namespace
-//  ver. 0.75
+//  ver. 0.76
 //  templatized
 //
 //	Idea of Jacques Arsac
