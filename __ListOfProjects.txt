@@ -68,8 +68,9 @@ Status: Completed
     3. Generating the first N Hamming Numbers, where N is a predefined value
        Hamming Number Namespace ver. 0.75 templatized
        
-       1. The members of the sequence are restricted to the positive int (32 bits)
-       2. the members of the sequence are restricted to the positive long long (64 bits)
+       1.int32  The members of the sequence are restricted to the positive int (32 bits)
+       2.int64  The members of the sequence are restricted to the positive long long (64 bits)
+       3.uint32 The members of the sequence are restricted to the unsigned int (32 bits)
     
       Status: Completed
   +++
