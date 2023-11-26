@@ -23,7 +23,8 @@
 48
 50
 +++
-HNS Generated of Scale #24
-T: 58, microseconds
+HN Generator ver.0.76
+HNS of Scale #24
+T: 54, microseconds
 +++
 

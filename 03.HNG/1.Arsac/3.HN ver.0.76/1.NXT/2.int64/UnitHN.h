@@ -1,6 +1,6 @@
 //---------------------------------------------------------------------------
 //  Hamming Number Namespace
-//  ver. 0.75
+//  ver. 0.76
 //  templatized
 //
 //	Idea of Jacques Arsac
@@ -19,6 +19,8 @@ namespace HN
 	{
 		f_2 = 2, f_3 = 3, f_5 = 5
 	};
+
+	const std::wstring inline ver(void)     {return L"0.76";}
 
 	template<class T> bool __get_HN_nxt(const std::vector<T>& src, const HN::Factor& f, T& dst)
 	//  Generates a proposal of the next HN (Arsac's Idea)

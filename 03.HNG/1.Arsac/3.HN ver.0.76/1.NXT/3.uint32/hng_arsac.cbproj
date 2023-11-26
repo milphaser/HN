@@ -109,9 +109,12 @@
         <TASM_Debugging>None</TASM_Debugging>
     </PropertyGroup>
     <ItemGroup>
+        <None Include="UnitHN.h">
+            <BuildOrder>1</BuildOrder>
+        </None>
         <CppCompile Include="UnitMain.cpp">
             <DependentOn>UnitMain.h</DependentOn>
-            <BuildOrder>1</BuildOrder>
+            <BuildOrder>0</BuildOrder>
         </CppCompile>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>

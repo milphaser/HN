@@ -23,7 +23,8 @@
 48
 50
 +++
+HN Generator ver.0.76
 HNS Generated of Scale #24
-T: 50, microseconds
+T: 42, microseconds
 +++
 

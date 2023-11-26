@@ -2047,7 +2047,8 @@
 33177600
 33554432
 +++
+HN Generator ver.0.76
 HNS Generated of Scale #2048
-T: 63242, microseconds
+T: 23273, microseconds
 +++
 
