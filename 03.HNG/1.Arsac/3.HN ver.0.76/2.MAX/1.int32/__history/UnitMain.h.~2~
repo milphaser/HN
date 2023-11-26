@@ -1,0 +1,13 @@
+//---------------------------------------------------------------------------
+#ifndef UnitMainH
+#define UnitMainH
+//---------------------------------------------------------------------------
+//const int SCALE 	= 10;		//  Size of the generated HNS
+const int SCALE 	= 24;		//  Size of the generated HNS
+//const int SCALE 	= 512;		//  Size of the generated HNS
+//const int SCALE 	= 2048;		//  Size of the generated HNS
+//---------------------------------------------------------------------------
+const std::wstring FILE_NAME_IN 	= L"..\\..\\Logs\\HNS_in.txt";
+const std::wstring FILE_NAME_OUT 	= L"..\\..\\Logs\\HNS_out.txt";
+//---------------------------------------------------------------------------
+#endif
