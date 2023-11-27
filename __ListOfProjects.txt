@@ -66,15 +66,18 @@ Status: Completed
     
       Status: Completed
 
-    3.HN ver.0.76
+    3.HN ver.0.7x
       Generating the first N Hamming Numbers, where N is a predefined value
       Hamming Number Namespace ver. 0.76 templatized
+      Hamming Number Namespace ver. 0.77 templatized
+      Hamming Number Namespace ver. 0.78 templatized
     
       1.NXT
       Generating the first N Hamming Numbers, where N is a predefined value
         1.int32  The members of the sequence are restricted to the positive int (32 bits)
         2.int64  The members of the sequence are restricted to the positive long long (64 bits)
         3.uint32 The members of the sequence are restricted to the unsigned int (32 bits)
+        4.uint64 The members of the sequence are restricted to the positive unsigned long long (64 bits)
     
       Status: Completed
 
@@ -83,6 +86,7 @@ Status: Completed
         1.int32  Of type int (32 bits)
         2.int64  Of type long long (64 bits)
         3.uint32 Of type unsigned int (32 bits)
+        4.uint64 Of type unsigned long long (64 bits)
     
       Status: Completed
   +++
