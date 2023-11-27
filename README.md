@@ -12,3 +12,4 @@
  Hamming Numbers Template Library ver. 0.78
  Standards: C++11, C++17
  Folder: 03.HNG/1.Arsac/3.HN ver.0.7x
+ File: UnitHN.h
