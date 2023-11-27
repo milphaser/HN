@@ -7,6 +7,4 @@
 //const int SCALE 	= 512;		//  Size of the generated HNS
 const int SCALE 	= 2048;		//  Size of the generated HNS
 //---------------------------------------------------------------------------
-using ULL = unsigned long long;
-//---------------------------------------------------------------------------
 #endif

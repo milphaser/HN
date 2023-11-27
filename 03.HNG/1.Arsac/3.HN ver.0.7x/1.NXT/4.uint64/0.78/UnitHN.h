@@ -15,6 +15,10 @@
 //---------------------------------------------------------------------------
 namespace HN
 {
+	using UINT = unsigned int;
+	using LL = long long;
+	using ULL = unsigned long long;
+
 	enum class Factor
 	{
 		f_2 = 2, f_3 = 3, f_5 = 5
@@ -22,7 +26,7 @@ namespace HN
 
 	const std::wstring inline ver(void)     {return L"0.78";}
 
-	template<class T> bool __get_HN_nxt(const std::vector<T>& src, const HN::Factor& f, T& dst)
+	template<typename T> bool __get_HN_nxt(const std::vector<T>& src, const HN::Factor& f, T& dst)
 	//  Generates a proposal of the next HN (Arsac's Idea)
 	//  by one of the three factors (2, 3 or 5)
 	//  Input:
@@ -33,50 +37,57 @@ namespace HN
 	//  - false, if error
 	//  - true, if no error
 	{
-		bool boolResult = false;
+		//  Check if T is accepted typename
+		if((std::is_same<T, int>::value || std::is_same<T, UINT>::value ||
+		   std::is_same<T, LL>::value || std::is_same<T, ULL>::value) == false)
+		{
+			return false;
+		}
 
-
+		//  Empty source sequence
 		if(src.empty())
 		{   //  Empty source sequence
 			dst = 1;            //  First HN
-			boolResult = true;
+			return true;
+		}
+
+		//  Not empty source sequence
+		bool boolResult = false;
+
+		auto aHN = src.back();
+		T tBase__ = aHN/static_cast<T>(f);      //  floor value
+
+		bool boolDivisible = false;
+		if(aHN == tBase__ * static_cast<T>(f))
+		{
+			boolDivisible = true;   //  the last HN is divisible by the factor f
 		}
 		else
-		{	//  Not empty source sequence
-			auto aHN = src.back();
-			T tBase__ = aHN/static_cast<T>(f);
-			bool boolDivisible = false;
-			if(aHN == tBase__ * static_cast<T>(f))
+		{
+			tBase__++;                          //  floor to ceil value
+		}
+
+		auto it = std::find_if(src.begin(), src.end(),
+			[&tBase__](const T& item) {return item >= tBase__;});
+		if (it != src.end())
+		{
+			if(boolDivisible)
 			{
-				boolDivisible = true;   //  the last HN is divisible by the factor f
-			}
-			else
-			{
-				tBase__++;
+				it++;
 			}
 
-			auto it = std::find_if(src.begin(), src.end(),
-				[&tBase__](const T& item) {return item >= tBase__;});
-			if (it != src.end())
+			if(it != src.end())
 			{
-				if(boolDivisible)
-				{
-					it++;
-				}
-
-				if(it != src.end())
-				{
-					auto aBase = *it;
-					dst = aBase * static_cast<T>(f);
-					boolResult = true;
-				}
+				auto aBase = *it;
+				dst = aBase * static_cast<T>(f);
+				boolResult = true;
 			}
 		}
 
 		return boolResult;
 	}
 
-	template<class T> bool __get_HN_nxt(const std::vector<T>& src, T& dst)
+	template<typename T> bool __get_HN_nxt(const std::vector<T>& src, T& dst)
 	//  Generates next HN at the end of the HNS (Arsac's Idea)
 	//  by merging of three HN proposal
 	//  Input:

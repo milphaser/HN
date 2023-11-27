@@ -41,14 +41,14 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	/////////////////////////////////////////////////////////////////////////
 	//  1. Generate a HNS of predefined SCALE
-	std::vector<ULL> vectorHNS;		// Hamming Number Sequence
+	std::vector<HN::ULL> vectorHNS;		// Hamming Number Sequence
 	bool boolError = false;             // generation error flag
 
 	auto beg = std::chrono::steady_clock::now();
 
 	for(auto i = 0; i < SCALE; i++)
 	{
-		ULL ullHN;
+		HN::ULL ullHN;
 		if(!HN::__get_HN_nxt(vectorHNS, ullHN))
 		{
 			boolError = true;
