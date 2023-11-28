@@ -51,7 +51,11 @@ Status: Completed
   Jacques Arsac's idea modern C++ implementation
   https://www.amazon.com/Jeux-casse-te%CC%82te-a%CC%80-programmer-French/dp/2040157638?ref_=ast_author_dp
   {Dynamic Programming}
-    1. Generating the next Hamming Number to the previously generated HNS
+    1.Alpha
+      Generating the next Hamming Number to the previously generated HNS
+      Hamming Number Namespace is separated into a self contained module
+      Input file:  the source HNS
+      Output file: the source HNS + next HN generated
       Assumptions:
       - the input sequence is guaranteed to be of type HNS, and this is not checked
       - the members of the sequence are restricted to the positive int (32 bits)
