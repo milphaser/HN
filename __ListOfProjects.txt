@@ -75,6 +75,7 @@ Status: Completed
       Hamming Number Namespace ver. 0.76 templatized
       Hamming Number Namespace ver. 0.77 templatized
       Hamming Number Namespace ver. 0.78 templatized
+      Hamming Number Namespace ver. 0.79 templatized
     
       1.NXT
       Generating the first N Hamming Numbers, where N is a predefined value
