@@ -1,5 +1,5 @@
 //---------------------------------------------------------------------------
-//  Бързо целочислено деление на 3
+//  Fast Integer Division by 3
 //---------------------------------------------------------------------------
 #include <vcl.h>
 #include <windows.h>
@@ -50,7 +50,7 @@ DWORD div_3(DWORD divident)
 	while(divident > 3)
 	{
 		sum = __add(divident >> 2, sum);
-		divident = __add(divident >> 2, divident & 3);
+		divident = __add(divident >> 2, divident& 3);
 	}
 
 	if(divident == 3)

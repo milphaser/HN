@@ -30,8 +30,10 @@ Status: Completed
     1.ASM - Integer Division by x86 div instruction
     2.CPP - Integer Division by std::div()
     DIV_35
-      1. Fast Integer Division by 3
-      2. Fast Integer Division by 3 and 5
+      1.DIV_35.Warren
+        Fast Integer Division by 3 and 5 [Henry S. Warren, Jr. Hacker's Delight]
+      2.DIV_3
+        Fast Integer Division by 3
   +++    
   F_2 Factorizes <src> as k*(2^exp)
   +++
