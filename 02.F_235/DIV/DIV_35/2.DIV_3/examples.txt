@@ -1,0 +1,37 @@
++++
+
+divident = 10100
+quotient = 0
+
+#1
+quotient = quotient + (divident >> 2) = 0 + (10100 >> 2) = 101
+divident = (divident >> 2) + (divident & 3) = (10100 >> 2) + (10100 & 11) = 101 + 0 = 101
+
+#2
+quotient = quotient + (divident >> 2) = 101 + (101 >> 2) = 101 + 1 = 110 (final quotient)
+divident = (divident >> 2) + (divident & 3) = (101 >> 2) + (101 & 11) = 1 + 1 = 10 (reminder)
+
+final quotient = 110
+final reminder = 10
+
++++
+
+divident = 1111
+quotient = 0
+
+#1
+quotient = quotient + (divident >> 2) = 0 + (1111 >> 2) = 11
+divident = (divident >> 2) + (divident & 3) = (1111 >> 2) + (1111 & 11) = 11 + 11 = 110
+
+#2
+quotient = quotient + (divident >> 2) = 11 + (110 >> 2) = 11 + 1 = 100
+divident = (divident >> 2) + (divident & 3) = (110 >> 2) + (110 & 11) = 1 + 10 = 11
+
+final quotient = 100 + 1 = 101
+final reminder = 0
+
++++
+
+
+
+

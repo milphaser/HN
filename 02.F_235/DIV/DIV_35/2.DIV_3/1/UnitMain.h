@@ -2,7 +2,9 @@
 #ifndef UnitMainH
 #define UnitMainH
 //---------------------------------------------------------------------------
-DWORD div_3(DWORD dividend);
-DWORD div_5(DWORD dividend);
+using UINT = unsigned int;
+
+UINT div_3(UINT dividend);
+UINT srl_add(UINT x, UINT y);
 //---------------------------------------------------------------------------
 #endif

@@ -48,7 +48,7 @@ int _tmain(void)
 	return 0;
 }
 //---------------------------------------------------------------------------
-DWORD __div(DWORD divident, DWORD divisor, DWORD& remainder)
+DWORD __div(DWORD dividend, DWORD divisor, DWORD& remainder)
 //  Integer Division
 //  Returns:
 //  * quotient
@@ -59,15 +59,15 @@ DWORD __div(DWORD divident, DWORD divisor, DWORD& remainder)
 
 	__asm
 	{
-		//	EAX - divident (low 32 bits)/quotient
+		//	EAX - dividend (low 32 bits)/quotient
 		//	ECX - divisor
-		//	EDX - divident (high 32 bits)/remainder
+		//	EDX - dividend (high 32 bits)/remainder
 		//  ESI - address of remainder
 
 		push ESI
 
-		xor EDX, EDX            // clear high 32 bits of the divident
-		mov EAX, [divident]     // set low 32 bits of the divident
+		xor EDX, EDX            // clear high 32 bits of the dividend
+		mov EAX, [dividend]     // set low 32 bits of the dividend
 		mov ECX, [divisor]      // set divider
 
 		div ECX                 // EAX <- quotient(EDX:EAX / EBX)

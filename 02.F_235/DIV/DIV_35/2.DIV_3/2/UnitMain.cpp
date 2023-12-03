@@ -1,7 +1,8 @@
 //---------------------------------------------------------------------------
-//  Fast Integer Division by 3 and 5
+//  Fast Integer Division by 3
 //---------------------------------------------------------------------------
-//  Source: Henry S. Warren, Jr. Hacker's Delight
+//  https://stackoverflow.com/questions/11694546/divide-a-number-by-3-without-using-operators
+//  Modification: Serial addition replaced with parallel
 //---------------------------------------------------------------------------
 #include <vcl.h>
 #include <windows.h>
@@ -14,19 +15,17 @@
 
 #include <iostream>
 #include <iomanip>
-//#include <chrono>
-//#include <string>		// included to be able to put std::string into std::cout
 
 #include "UnitMain.h"
 //---------------------------------------------------------------------------
-const DWORD BEG		= 0;
-const DWORD N 		= 32;
+const int BEG 	= 0;
+const int N		= 256;
 //---------------------------------------------------------------------------
 int _tmain(void)
 {
-	std::cout << "Fast Integer Division by 3 and 5" << std::endl << std::endl;
+	std::cout << "Fast Integer Division by 3" << std::endl << std::endl;
 
-	for(DWORD i = BEG; i < BEG + N; i++)
+	for(int i = BEG; i < BEG + N; i++)
 	{
 		std::cout << std::uppercase;
 
@@ -34,9 +33,8 @@ int _tmain(void)
 		std::cout << "[" << std::hex << std::setw(4) << std::setfill('0') << i << "]";
 
 		std::cout << " " << std::dec << std::setw(3) << std::setfill(' ') << i/3;
+		std::cout << "|" << std::dec << std::setw(3) << std::setfill(' ') << div_3(i);
 		std::cout << "[" << std::hex << std::setw(4) << std::setfill('0') << div_3(i) << "]";
-		std::cout << " " << std::dec << std::setw(3) << std::setfill(' ') << i/5;
-		std::cout << "[" << std::hex << std::setw(4) << std::setfill('0') << div_5(i) << "]";
 
 		std::cout << std::endl;
 	}
@@ -46,20 +44,22 @@ int _tmain(void)
 	return 0;
 }
 //---------------------------------------------------------------------------
-DWORD div_3(DWORD dividend)
-//  https://stackoverflow.com/questions/20450643/division-by-3-without-division-operator?rq=3
-//  Henry S. Warren, Jr. Hacker's Delight
+UINT div_3(UINT dividend)
 {
-	__int64 q = static_cast<__int64>(dividend) * 0xAAAAAAAB;  // (2^33+1)/3
-	return static_cast<DWORD>(q >> 33);
-}
-//---------------------------------------------------------------------------
-DWORD div_5(DWORD dividend)
-//  https://stackoverflow.com/questions/17113660/divisiblity-of-5-without-using-and-operator
-//  Henry S. Warren, Jr. Hacker's Delight
-{
-	__int64 q = static_cast<__int64>(dividend) * 0x66666667;  // (2^33+3)/5
-	return static_cast<DWORD>(q >> 33);
+	UINT quotient = 0;
+
+	while(dividend > 3)
+	{
+		quotient = quotient + (dividend >> 2);
+		dividend = (dividend >> 2) + (dividend & 3);
+	}
+
+	if(dividend == 3)
+	{
+		quotient = quotient + 1;
+	}
+
+	return quotient;
 }
 //---------------------------------------------------------------------------
 //#pragma package(smart_init)

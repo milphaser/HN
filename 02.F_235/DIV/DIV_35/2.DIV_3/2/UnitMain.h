@@ -2,7 +2,8 @@
 #ifndef UnitMainH
 #define UnitMainH
 //---------------------------------------------------------------------------
-DWORD div_3(DWORD divident);
-DWORD __add(DWORD x, DWORD y);
+using UINT = unsigned int;
+
+UINT div_3(UINT dividend);
 //---------------------------------------------------------------------------
 #endif

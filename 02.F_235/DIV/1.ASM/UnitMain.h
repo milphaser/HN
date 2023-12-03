@@ -2,6 +2,6 @@
 #ifndef UnitMainH
 #define UnitMainH
 //---------------------------------------------------------------------------
-DWORD __div(DWORD divident, DWORD divisor, DWORD& remainder);
+DWORD __div(DWORD dividend, DWORD divisor, DWORD& remainder);
 //---------------------------------------------------------------------------
 #endif
