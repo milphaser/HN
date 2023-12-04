@@ -26,15 +26,6 @@ Status: Completed
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 02.F_235  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-  DIV
-    1.ASM - Integer Division by x86 div instruction
-    2.CPP - Integer Division by std::div()
-    DIV_35
-      1.DIV_35.Warren
-        Fast Integer Division by 3 and 5 [Henry S. Warren, Jr. Hacker's Delight]
-      2.DIV_3
-        Fast Integer Division by 3
-  +++    
   F_2 Factorizes <src> as k*(2^exp)
   +++
   F_3 Factorizes <src> as k*(3^exp)
@@ -45,7 +36,35 @@ Status: Completed
     1. Checking for factorability as (2^k)*(3^l)*(5^m)
     2. Checking for factorability as (2^k)*(3^l)*(5^m) with Logs and Profiling
 
-Status: Completed
+  Status: Completed
+  +++
+  MATH
+    1.DIV
+      1.ASM - Integer Division by x86 div instruction
+      Status: Completed
+
+      2.CPP - Integer Division by std::div()
+      Status: Completed
+
+      3.DIV_35
+        1.DIV_35.Warren
+          Fast Integer Division by 3 and 5 [Henry S. Warren, Jr. Hacker's Delight]
+          Status: Completed
+
+        2.DIV_3
+          Fast Integer Division by 3
+          Status: Under Development
+
+    2.Multi-word
+      Multiword Division
+      Steps beyond the 64-bit limit (without use of <bigint> libraries)
+      1.DIV_MW_64_32
+        64 bit dividend/32 bit divisor
+      Status: Under Development
+
+      2.DIV_MW_128_64
+        128 bit dividend/64 bit divisor
+      Status: Under Development
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 03.HNG +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -100,5 +119,5 @@ Status: Completed
   2.Triplex
   Generating the next Hamming Number based on the last characteristic triplets
 
-Status: Uncompleted
+  Status: Aborted
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

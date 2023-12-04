@@ -1,5 +1,6 @@
 //---------------------------------------------------------------------------
-//  Целочислено деление
+//	Integer Division
+//	std::div implementation
 //---------------------------------------------------------------------------
 #include <vcl.h>
 #include <windows.h>
@@ -27,9 +28,8 @@ int _tmain(void)
 
 	for(DWORD i = BEG; i < BEG + N; i++)
 	{
-		std::div_t dt_3, dt_5;
-		dt_3 = std::div(i, 3);
-		dt_5 = std::div(i, 5);
+		auto dt_3 = std::div(i, 3);
+		auto dt_5 = std::div(i, 5);
 
 		std::cout << std::uppercase;
 
