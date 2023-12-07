@@ -55,16 +55,23 @@ Status: Completed
           Fast Integer Division by 3
           Status: Under Development
 
-    2.Multi-word
-      Multiword Division
-      Steps beyond the 64-bit limit (without use of <bigint> libraries)
-      1.DIV_MW_64_32
-        64 bit dividend/32 bit divisor
-      Status: Under Development
+    2.MW Namespace
+      Supports generation of multi-word Hamming Numbers
+      1.MW ver.0.01
+        Project mw_mul_2
+	Multi-word Multiplication by 2
+      Status: Completed Subversion
 
-      2.DIV_MW_128_64
-        128 bit dividend/64 bit divisor
-      Status: Under Development
+      2.MW ver.0.02
+        Project mw_mul_23
+	Multi-word Multiplication by 2 and 3
+      Status: Completed Subversion
+
+      3.MW ver.0.03
+        Project mw_mul_235
+	Multi-word Multiplication by 2, 3 and 5
+      Status: Completed Subversion
+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 03.HNG +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
