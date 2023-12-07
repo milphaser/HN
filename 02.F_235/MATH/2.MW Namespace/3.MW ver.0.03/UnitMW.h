@@ -76,8 +76,9 @@ namespace MW
 			else if(arr.size() == rhs.arr.size())
 			{
 				for(auto i = 0; i < arr.size(); i++)
-				{   // Checks from MS Part to LS Part
-					if(arr[arr.size() - i - 1] > rhs.arr[arr.size() - i - 1])
+				{
+					// MS Part ---> LS Part
+					if(arr[i] > rhs.arr[i])
 						break;
 				}
 				boolResult = true;
@@ -116,6 +117,8 @@ namespace MW
 			for(auto i = 0; i < arr.size(); i++)
 			{
 				ULL pp;     	// Partial Product
+
+				// MS Part <--- LS Part
 				pp.dw.lo = arr[arr.size() - i - 1];
 				pp.dw.hi = 0;
 
@@ -139,6 +142,8 @@ namespace MW
 			for(auto i = 0; i < arr.size(); i++)
 			{
 				ULL pp;     	// Partial Product
+
+				// MS Part <--- LS Part
 				pp.dw.lo = arr[arr.size() - i - 1];
 				pp.dw.hi = 0;
 
@@ -163,6 +168,8 @@ namespace MW
 			for(auto i = 0; i < arr.size(); i++)
 			{
 				ULL pp;     	// Partial Product
+
+				// MS Part <--- LS Part
 				pp.dw.lo = arr[arr.size() - i - 1];
 				pp.dw.hi = 0;
 
