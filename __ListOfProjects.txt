@@ -72,6 +72,12 @@ Status: Completed
 	Multi-word Multiplication by 2, 3 and 5
       Status: Completed Subversion
 
+      4.MW ver.0.04
+        Project mw_div
+	Multi-word Division
+	(Multi-word Dividend/Double Word Divisor)
+      Status: Under Development
+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 03.HNG +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
