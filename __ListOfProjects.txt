@@ -76,6 +76,11 @@ Status: Completed
         Project mw_div
 	Multi-word Division
 	(Multi-word Dividend/Double Word Divisor)
+      Status: Completed Subversion
+
+      5.MW ver.0.05
+        Project mw_test
+	Multi-word Arithmetic Test
       Status: Under Development
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
