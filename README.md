@@ -10,7 +10,14 @@
  +++
 
  Hamming Numbers Template Library ver. 0.79
- Standards: C++11, C++17
-
  Folder: 03.HNG/1.Arsac/3.HN ver.0.7x
  File: UnitHN.h
+ Standards: C++11, C++17
+
+
+
+ Multi-word Template Library ver. 0.05
+ Standards: C++11, C++17
+
+ Folder: 02.F_235\MATH\2.MW Namespace\5.MW ver.0.05
+ File: UnitMW.h
