@@ -81,7 +81,9 @@ Status: Completed
       5.MW ver.0.05
         Project mw_test
 	Multi-word Arithmetic Test
-      Status: Under Development
+      Status: Completed
+    
+    Status: Completed
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
