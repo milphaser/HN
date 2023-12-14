@@ -84,7 +84,8 @@ Status: Completed
       Status: Completed
     
     Status: Completed
-
+    Note 1: Comparison operators are not tested and may contain flaws!
+    Note 2: For next version follow folder Multi-word HN
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 03.HNG +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -135,6 +136,13 @@ Status: Completed
         4.uint64 Of type unsigned long long (64 bits)
     
       Status: Completed
+      
+    4.Multi-word HN
+      Multi-word HN Namespace ver. 0.85
+      & Multi-word Namespace ver.0.15
+
+      Status: Under Development
+
   +++
   2.Triplex
   Generating the next Hamming Number based on the last characteristic triplets

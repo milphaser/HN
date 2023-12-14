@@ -9,16 +9,16 @@
 
  +++
 
- Hamming Numbers Template Library ver. 0.79
+ Hamming Numbers Template Library ver. 0.85
  Standards: C++11, C++17
 
- Folder: 03.HNG/1.Arsac/3.HN ver.0.7x
+ Folder: 03.HNG\1.Arsac\4.Multi-word HN
  File: UnitHN.h
 
  +++
 
- Multi-word Template Library ver. 0.05
+ Multi-word Template Library ver. 0.15
  Standards: C++11, C++17
 
- Folder: 02.F_235\MATH\2.MW Namespace\5.MW ver.0.05
+ Folder: 03.HNG\1.Arsac\4.Multi-word HN
  File: UnitMW.h
