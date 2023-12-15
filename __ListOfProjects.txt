@@ -21,7 +21,6 @@
          The rule for divisibility by 11 is that you add all the odd digits and all the even digits and subtract one from the other. 
          If the result is divisible by 11 (which remember is 5), then it's divisible by 11 (which remember is 5).
       2.POPCNT
-
 Status: Completed
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -35,7 +34,6 @@ Status: Completed
   F_235
     1. Checking for factorability as (2^k)*(3^l)*(5^m)
     2. Checking for factorability as (2^k)*(3^l)*(5^m) with Logs and Profiling
-
   Status: Completed
   +++
   MATH
@@ -101,15 +99,13 @@ Status: Completed
       Assumptions:
       - the input sequence is guaranteed to be of type HNS, and this is not checked
       - the members of the sequence are restricted to the positive int (32 bits)
-
       Status: Completed
-
+    +++
     2.HN ver.0.70
       Generating the first N Hamming Numbers, where N is a predefined value
       Hamming Number Namespace ver. 0.70
       Assumptions:
       - the members of the sequence are restricted to the positive int (32 bits)
-    
       Status: Completed
 
     3.HN ver.0.7x
@@ -125,7 +121,6 @@ Status: Completed
         2.int64  The members of the sequence are restricted to the positive long long (64 bits)
         3.uint32 The members of the sequence are restricted to the unsigned int (32 bits)
         4.uint64 The members of the sequence are restricted to the positive unsigned long long (64 bits)
-    
       Status: Completed
 
       2.MAX
@@ -134,18 +129,22 @@ Status: Completed
         2.int64  Of type long long (64 bits)
         3.uint32 Of type unsigned int (32 bits)
         4.uint64 Of type unsigned long long (64 bits)
-    
       Status: Completed
-      
+    +++      
     4.Multi-word HN
-      Multi-word HN Namespace ver. 0.85
-      & Multi-word Namespace ver.0.15
-
+      
+      1.MAX
+        Project: hng_arsac_max
+        Multi-word HN Namespace ver.0.85 & Multi-word Namespace ver.0.15
       Status: Under Development
 
+      2.Conversion
+        Project: hng_arsac_d2b
+        Multi-word Decimal to Binary (Internal) Interpration
+        Multi-word HN Namespace ver.0.85 & Multi-word Namespace ver.0.16
+      Status: Under Development
   +++
   2.Triplex
   Generating the next Hamming Number based on the last characteristic triplets
-
   Status: Aborted
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
