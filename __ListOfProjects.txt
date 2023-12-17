@@ -139,7 +139,7 @@ Status: Completed
       Status: Completed
 
       2.Conversion
-        Project: hng_arsac_d2b
+        Project: hng_d2b
         Multi-word Decimal to Internal (Binary) Conversion
         Multi-word HN Namespace ver.0.85
         Multi-word Namespace ver.0.15 to ver.0.17 Evolution
