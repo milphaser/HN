@@ -136,12 +136,13 @@ Status: Completed
       1.MAX
         Project: hng_arsac_max
         Multi-word HN Namespace ver.0.85 & Multi-word Namespace ver.0.15
-      Status: Under Development
+      Status: Completed
 
       2.Conversion
         Project: hng_arsac_d2b
-        Multi-word Decimal to Binary (Internal) Interpration
-        Multi-word HN Namespace ver.0.85 & Multi-word Namespace ver.0.16
+        Multi-word Decimal to Internal (Binary) Conversion
+        Multi-word HN Namespace ver.0.85
+        Multi-word Namespace ver.0.15 to ver.0.17 Evolution
       Status: Under Development
   +++
   2.Triplex
