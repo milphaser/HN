@@ -147,5 +147,5 @@ Status: Completed
   +++
   2.Triplex
   Generating the next Hamming Number based on the last characteristic triplets
-  Status: Aborted
+  Status: Abandoned
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

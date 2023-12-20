@@ -1,0 +1,9 @@
+MW Namespace ver.0.17
+MW Binary to Decimal Conversion
+
+Max Value [128 bits]
+BIN: 0xFFFFFFFF:FFFFFFFF:FFFFFFFF:FFFFFFFF
+DEC: 340282366920938463463374607431768211455
+
+T: 57, microseconds
+
