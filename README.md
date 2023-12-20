@@ -10,15 +10,15 @@
  +++
 
  Hamming Numbers Template Library ver. 0.85
- Standards: C++11, C++17
+ [Standards: C++11, C++17]
 
  Folder: 03.HNG\1.Arsac\4.Multi-word HN
- File: UnitHN.h
+ | File: UnitHN.h
 
  +++
 
  Multi-word Template Library ver. 0.17
- Standards: C++11, C++17
+ [Standards: C++11, C++17]
 
  Folder: 03.HNG\1.Arsac\4.Multi-word HN
- File: UnitMW.h
+ | File: UnitMW.h
