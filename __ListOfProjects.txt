@@ -143,7 +143,22 @@ Status: Completed
         Multi-word Decimal to Internal (Binary) Conversion
         Multi-word HN Namespace ver.0.85
         Multi-word Namespace ver.0.15 to ver.0.17 Evolution
-      Status: Under Development
+      Status: Completed
+
+      3.NXT
+        Project: hng_nxt
+        Multi-word Hamming Number Generator
+        {Dynamic Programming}
+        Multi-word HN Namespace ver.0.85
+        Multi-word Namespace ver.0.18
+
+       The Arsac's idea implementation:
+       Generating the next Hamming Number to the previously generated HNS
+
+       Input file:  Source HNS (HEX or DEC)
+       Output file: Source HNS + next HN generated
+
+      Status: Completed
   +++
   2.Triplex
   Generating the next Hamming Number based on the last characteristic triplets
