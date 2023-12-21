@@ -17,7 +17,7 @@
 
  +++
 
- Multi-word Template Library ver. 0.17
+ Multi-word Template Library ver. 0.18
  [Standards: C++11, C++17]
 
  Folder: 03.HNG\1.Arsac\4.Multi-word HN
