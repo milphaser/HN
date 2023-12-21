@@ -389,8 +389,29 @@ namespace MW
 		//  NOTE: High part of the product is truncated
 		{
 			INT_T product = *this;
-			for(auto i = 0; i < exp; i++)
-				product = product.mul_10();
+			for(auto ii = 0; ii < exp; ii++)
+			{
+				UINT carry = 0;     // High Part of the Partial Product
+
+				for(auto i = 0; i < N; i++)
+				{
+					ULL pp;     	// Partial Product
+
+					// MS Part <--- LS Part
+					pp.dw.lo = product.arr[N - i - 1];
+					pp.dw.hi = 0;
+
+					pp.qw <<= 2;
+					pp.qw += product.arr[N - i - 1];
+					pp.qw <<= 1;
+
+					pp.qw += carry;
+
+					product.arr[N - i - 1] = pp.dw.lo;
+					carry = pp.dw.hi;
+				}
+            }
+
 			return product;
 		}
 
