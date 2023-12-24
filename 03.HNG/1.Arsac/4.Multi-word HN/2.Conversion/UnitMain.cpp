@@ -77,7 +77,9 @@ int _tmain(int argc, _TCHAR* argv[])
 			X <<= 1;
 			ss << "SHL 1: " << X << "\n";
 			X <<= 4;
-			ss << "SHL 4: " << X << "\n\n";
+			ss << "SHL 4: " << X << "\n";
+			X <<= 32;
+			ss << "SHL32: " << X << "\n\n";
 		}
 
 		{
@@ -89,7 +91,9 @@ int _tmain(int argc, _TCHAR* argv[])
 			X >>= 1;
 			ss << "SHR 1: " << X << "\n";
 			X >>= 4;
-			ss << "SHR 4: " << X << "\n\n";
+			ss << "SHR 4: " << X << "\n";
+			X >>= 32;
+			ss << "SHR32: " << X << "\n\n";
 		}
 
 		{

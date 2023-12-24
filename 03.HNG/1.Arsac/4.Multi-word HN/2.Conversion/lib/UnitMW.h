@@ -45,7 +45,7 @@ namespace MW
 		INT_T(const INT_T& rhs) {arr = rhs.arr;}
 		INT_T(const UINT& rhs) {arr.fill(0); arr[N - 1] = rhs;}
 
-		constexpr int digits(void) {return (sizeof(arr) * 8);}
+		constexpr int digits(void) {return (sizeof(arr) * std::numeric_limits<byte>::digits);}
 
 		INT_T& operator=(const INT_T& rhs)
 		{
@@ -222,9 +222,9 @@ namespace MW
 		}
 
 		INT_T& operator<<=(const UINT& rhs)
-		//	NOTE: 0 < rhs <= 32
 		{
-			UINT shifts = rhs & 0x1F;
+			UINT shifts = rhs;
+			if(shifts > digits()) shifts = digits();
 			UINT lor = 0;			// Left Overrun of the Partial Shift
 
 			for(auto i = 0; i < N; i++)
@@ -243,9 +243,9 @@ namespace MW
 		}
 
 		INT_T& operator>>=(const UINT& rhs)
-		//	NOTE: 0 < rhs <= 32
 		{
-			UINT shifts = rhs & 0x1F;
+			UINT shifts = rhs;
+			if(shifts > digits()) shifts = digits();
 			UINT ror = 0;		// Right Overrun of the Partial Shift
 
 			for(auto i = 0; i < N; i++)
