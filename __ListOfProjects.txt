@@ -41,7 +41,11 @@ Status: Completed
       1.ASM - Integer Division by x86 div instruction
       Status: Completed
 
-      2.CPP - Integer Division by std::div()
+      2.CPP - Integer Division
+        1.STD
+          Integer Division by std::div()
+        2.ITERATIVE
+          Iterative Integer Division
       Status: Completed
 
       3.DIV_35
