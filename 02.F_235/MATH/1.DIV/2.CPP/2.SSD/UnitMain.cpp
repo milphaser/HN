@@ -1,6 +1,8 @@
 //---------------------------------------------------------------------------
 //	Integer Division
-//	std::div implementation
+//  With Successive Subtraction of the Divisor
+//	VERY INEFFICIENT
+//	ONLY FOR ILLUSTRATION
 //---------------------------------------------------------------------------
 #include <vcl.h>
 #pragma hdrstop
@@ -21,7 +23,7 @@ const DWORD N 	= 16;
 int _tmain(void)
 {
 	std::cout << "Integer Division" << std::endl;
-	std::cout << "(Iterative)" << std::endl << std::endl;
+	std::cout << "With Successive Subtraction of the Divisor" << std::endl << std::endl;
 
 	for(DWORD i = BEG; i < BEG + N; i++)
 	{
@@ -47,12 +49,15 @@ int _tmain(void)
 //---------------------------------------------------------------------------
 std::div_t div(const DWORD dividend, const DWORD divisor)
 //  https://www.geeksforgeeks.org/divide-two-integers-without-using-multiplication-division-mod-operator/
+//  Division With Successive Subtraction of the Divisor
+//	VERY INEFFICIENT
+//	ONLY FOR ILLUSTRATION
 {
 	std::div_t result;
 
 	if(divisor == 0)
 	{
-        //  OVERFLOW
+		//  OVERFLOW
 		result.quot = std::numeric_limits<DWORD>::max();
 		result.rem = 0;
 	}

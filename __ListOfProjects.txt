@@ -42,13 +42,14 @@ Status: Completed
       Status: Completed
 
       2.CPP - Integer Division
-        1.STD
+        1.STD::DIV
           Integer Division by std::div()
-        2.ITERATIVE
-          Iterative Integer Division
-          VERY INEFFICIENT
-          ONLY FOR ILLUSTRATION
-      Status: Completed
+          Status: Completed
+        2.SSD
+          Division With Successive Subtraction of the Divisor
+	  VERY INEFFICIENT
+	  ONLY FOR ILLUSTRATION
+          Status: Completed
 
       3.DIV_35
         1.DIV_35.Warren
