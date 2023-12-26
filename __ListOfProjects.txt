@@ -159,6 +159,14 @@ Status: Completed
        Output file: Source HNS + next HN generated
 
       Status: Completed
+      
+      4.MUL
+        Project: hng_mul
+        Multi-word Total Multiplication Test
+        Multi-word HN Namespace ver.0.85
+        Multi-word Namespace ver.0.19
+
+      Status: Completed
   +++
   2.Triplex
   Generating the next Hamming Number based on the last characteristic triplets
