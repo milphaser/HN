@@ -38,27 +38,34 @@ Status: Completed
   +++
   MATH
     1.DIV
-      1.ASM - Integer Division by x86 div instruction
-      Status: Completed
+      1.ASM
+        1.Long
+          8 bit Long Division
+        Status: Completed
+        
+        2.Machine Support
+          Integer Division by x86 div instruction
+        Status: Completed
 
       2.CPP - Integer Division
-        1.STD::DIV
-          Integer Division by std::div()
-          Status: Completed
-        2.SSD
+        1.SSD
           Division With Successive Subtraction of the Divisor
 	  VERY INEFFICIENT
 	  ONLY FOR ILLUSTRATION
-          Status: Completed
+        Status: Completed
+          
+        2.STD::DIV
+          Integer Division by std::div()
+        Status: Completed
 
       3.DIV_35
         1.DIV_35.Warren
           Fast Integer Division by 3 and 5 [Henry S. Warren, Jr. Hacker's Delight]
-          Status: Completed
+        Status: Completed
 
         2.DIV_3
           Fast Integer Division by 3
-          Status: Under Development
+        Status: Under Development
 
     2.MW Namespace
       Supports generation of multi-word Hamming Numbers
@@ -106,14 +113,14 @@ Status: Completed
       Assumptions:
       - the input sequence is guaranteed to be of type HNS, and this is not checked
       - the members of the sequence are restricted to the positive int (32 bits)
-      Status: Completed
+    Status: Completed
     +++
     2.HN ver.0.70
       Generating the first N Hamming Numbers, where N is a predefined value
       Hamming Number Namespace ver. 0.70
       Assumptions:
       - the members of the sequence are restricted to the positive int (32 bits)
-      Status: Completed
+    Status: Completed
 
     3.HN ver.0.7x
       Generating the first N Hamming Numbers, where N is a predefined value
@@ -164,7 +171,6 @@ Status: Completed
 
        Input file:  Source HNS (HEX or DEC)
        Output file: Source HNS + next HN generated
-
       Status: Completed
       
       4.MULDIV
@@ -172,7 +178,6 @@ Status: Completed
         Multi-word Total Multiplication/Division Test
         Multi-word HN Namespace ver.0.85
         Multi-word Namespace ver.0.19
-
       Status: Completed
   +++
   2.Triplex
