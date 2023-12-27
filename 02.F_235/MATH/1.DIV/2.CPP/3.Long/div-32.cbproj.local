@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.602,C:\TEMP\HOBBY TIME\20.BitManipulations\04.BitSet\1.BSF\IsPowerOf2.cbproj=C:\TEMP\HOBBY TIME\20.BitManipulations\04.BitSet\1.BSF\BSF.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.486,C:\Z.HOBBY TIME\20.BitManipulations\17.Arithmetic\1.Integer\1.Multiplication\4-Bit\GetParity.cbproj=C:\Z.HOBBY TIME\20.BitManipulations\17.Arithmetic\1.Integer\1.Multiplication\4-Bit\4-bitMul.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.984,C:\Z.HOBBY TIME\20.BitManipulations\17.Arithmetic\1.Integer\2.Division\8-Bit\8-bitDiv.cbproj=C:\Z.HOBBY TIME\20.BitManipulations\17.Arithmetic\1.Integer\2.Division\8-Bit\4-bitMul.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.509,C:\TEMP\CA.PROJECTS\Test9.JMP\0.XE - ОСНОВНО РЕШЕНИЕ\TestBEPCH1.h=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.972,C:\TEMP\HOBBY TIME\20.BitManipulations\03.IsPowerOf2\IsPowerOf2.cbproj=C:\TEMP\HOBBY TIME\20.BitManipulations\03.IsPowerOf2\BE_CmpToZero.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.099,C:\TEMP\HOBBY TIME\20.BitManipulations\05.GetParity\1\GetParity.cbproj=C:\TEMP\HOBBY TIME\20.BitManipulations\05.GetParity\1\BSF.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.780,C:\Z.HOBBY TIME\50.Puzzles\HN\02.F_235\MATH\1.DIV\1.ASM\1.Long\8-bitDiv.cbproj=C:\Z.HOBBY TIME\50.Puzzles\HN\02.F_235\MATH\1.DIV\1.ASM\1.Long\div-8.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.091,C:\CA\5\TestBE.cbproj=C:\CA\5\TestFPU.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.942,C:\Users\Milen\Documents\RAD Studio\Projects\Project1.cbproj=C:\CA\2\TestFPU.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.303,C:\TEMP\HOBBY TIME\08.BE_PRJ\1.BECmpToZero\BE_CmpToZero.cbproj=C:\TEMP\HOBBY TIME\08.BE_PRJ\1.BECmpToZero\TestBE.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.204,=C:\Users\Milen\Documents\RAD Studio\Projects\File1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.414,C:\Users\Milen\Documents\RAD Studio\Projects\File1.cpp=C:\CA\2\UnitMain.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.147,=C:\Users\Milen\Documents\RAD Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.650,C:\Users\Milen\Documents\RAD Studio\Projects\Project1PCH1.h=C:\CA\2\TestFPUPCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.071,C:\CA\5\TestBEPCH1.h=C:\CA\5\TestFPUPCH1.h</Transaction>
+    <Transaction>2023.12.27 09:53:34.303,C:\Z.HOBBY TIME\50.Puzzles\HN\02.F_235\MATH\1.DIV\2.CPP\3.Long\div-32.cbproj=C:\Z.HOBBY TIME\50.Puzzles\HN\02.F_235\MATH\1.DIV\2.CPP\3.Long\div-8.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

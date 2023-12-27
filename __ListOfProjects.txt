@@ -58,6 +58,10 @@ Status: Completed
           Integer Division by std::div()
         Status: Completed
 
+        3.Long
+          C++ Implementation of Long Machine Division (32 bit)
+        Status: Completed
+
       3.DIV_35
         1.DIV_35.Warren
           Fast Integer Division by 3 and 5 [Henry S. Warren, Jr. Hacker's Delight]
