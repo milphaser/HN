@@ -24,8 +24,6 @@ int _tmain(int argc, _TCHAR* argv[])
 		{
 			DIV_QR z = __div_8_bit(x[i], y);
 
-			std::cout << std::setfill('0') << std::hex << std::uppercase;
-
 			if((z.quotient & z.reminder & 0xFF) == 0xFF)
 			{
 				std::cout << "x = "
