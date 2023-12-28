@@ -68,6 +68,10 @@ int _tmain(int argc, _TCHAR* argv[])
 //  C++ Implementation
 DIV_T div(const UINT& dividend, const UINT& divisor)
 //	Computes the quotient and reminder of division of the dividend by the divisor
+//  Analogy to ASM version
+//  - DX, dividend extended
+//  - CL, divisor
+//  - AX, result [AH - quotient, AL - reminder]
 {
 	DIV_T result;
 
@@ -79,29 +83,26 @@ DIV_T div(const UINT& dividend, const UINT& divisor)
 	}
 	else
 	{
-		// DX - dividend
-		ULL DX; DX.dw.hi = 0; DX.dw.lo = dividend;
+		ULL Dividend≈xt;            	//  Dividend Extended
+		Dividend≈xt.dw.hi = 0;
+		Dividend≈xt.dw.lo = dividend;
 
-		// CL - divisor
-		UINT CL = divisor;
-
-		// AH - quotient
-		UINT AH = 0;
+		result.quot = 0;
 
 		for(auto i = 0; i < std::numeric_limits<UINT>::digits; i++)
 		{
-			AH <<= 1;			//	clear the next bit of the quotient
-			DX.qw <<= 1;        //  take the next MS bit of the dividend
+			result.quot <<= 1;			//	clear the next bit of the quotient
+			Dividend≈xt.qw <<= 1;		//  take the next MS bit of the dividend
 
-			if(DX.dw.hi >= CL)
+			if(Dividend≈xt.dw.hi >= divisor)
 			{
-				DX.dw.hi -= CL; //	DH - partial dividend
-				AH |= 1;		//	set the next bit of the quotient
+				Dividend≈xt.dw.hi -= divisor;	//	partial dividend
+				result.quot |= 1;		//	set the next bit of the quotient
 			}
 		}
 
-		result.quot = AH;       //  Final Quotient
-		result.rem  = DX.dw.hi; //  Final Reminder
+		//  Final Reminder
+		result.rem  = Dividend≈xt.dw.hi;
 	}
 
    return result;
