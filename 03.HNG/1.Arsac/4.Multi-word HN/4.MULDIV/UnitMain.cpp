@@ -1,5 +1,5 @@
 //---------------------------------------------------------------------------
-//  Multi-word Total Multiplication Test
+//  Multi-word Total Multiplication/Division Test
 //---------------------------------------------------------------------------
 //	Multi-word HN Namespace ver.0.85
 //	Multi-word Namespace ver.0.19
@@ -35,7 +35,7 @@ const int MW_SIZE = 4;	// Multi-word Size in Double Words [128 bits]
 int _tmain(int argc, _TCHAR* argv[])
 {
 	std::cout << "Multi-word Namespace ver." << MW::ver << "\n";
-	std::cout << "Multi-word Total Multiplication Test\n";
+	std::cout << "Multi-word Total Multiplication/Division Test\n";
 
 	auto tp = std::chrono::system_clock::now();
 	auto tt = std::chrono::system_clock::to_time_t(tp);
@@ -48,7 +48,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	std::stringstream ss;
 
 	ss << "MW Namespace ver." << MW::ver << "\n";
-	ss << "MW Total Multiplication Test\n\n";
+	ss << "MW Total Multiplication/Division Test\n\n";
 	std::cout << "Please, wait...\n\n";
 
 	if(of)
@@ -81,7 +81,8 @@ int _tmain(int argc, _TCHAR* argv[])
 				{0x33333333, 0x55555555, 0x77777777, 0xAAAAAAAA};
 			MW::INT_T<MW_SIZE> X(arr);
 			MW::INT_T<MW_SIZE/2> HI, LO;
-			LO = MW::split(X, HI);
+			HI = MW::split_hi<MW_SIZE/2>(X);
+			LO = MW::split_lo<MW_SIZE/2>(X);
 			ss << "    X: " << X << "\n";
 			ss << " HI X: " << HI << "\n";
 			ss << " LO X: " << LO << "\n\n";
@@ -97,7 +98,7 @@ int _tmain(int argc, _TCHAR* argv[])
 			MW::INT_T<MW_SIZE> Z = mul(X, Y);
 			ss << "    X: " << X << "\n";
 			ss << "    Y: " << Y << "\n";
-			ss << "X * Y: " << Z << "\n\n";
+			ss << "  X*Y: " << Z << "\n\n";
 		}
 
 		{
@@ -110,7 +111,7 @@ int _tmain(int argc, _TCHAR* argv[])
 			MW::INT_T<MW_SIZE> Z = mul(X, Y);
 			ss << "    X: " << X << "\n";
 			ss << "    Y: " << Y << "\n";
-			ss << "X * Y: " << Z << "\n\n";
+			ss << "  X*Y: " << Z << "\n\n";
 		}
 
 		{
@@ -123,7 +124,7 @@ int _tmain(int argc, _TCHAR* argv[])
 			MW::INT_T<MW_SIZE> Z = mul(X, Y);
 			ss << "    X: " << X << "\n";
 			ss << "    Y: " << Y << "\n";
-			ss << "X * Y: " << Z << "\n\n";
+			ss << "  X*Y: " << Z << "\n\n";
 		}
 
 		{
@@ -136,7 +137,49 @@ int _tmain(int argc, _TCHAR* argv[])
 			MW::INT_T<MW_SIZE> Z = mul(X, Y);
 			ss << "    X: " << X << "\n";
 			ss << "    Y: " << Y << "\n";
-			ss << "X * Y: " << Z << "\n\n";
+			ss << "  X*Y: " << Z << "\n\n";
+		}
+
+		{
+			std::array<UINT, MW_SIZE> dividend =
+				{0x0, 0x0, 0x0, 0x000FFFFF};
+			std::array<UINT, MW_SIZE> divisor =
+				{0x0, 0x0, 0x0, 0x00000001};
+			MW::INT_T<MW_SIZE> X(dividend);
+			MW::INT_T<MW_SIZE> Y(divisor);
+			MW::DIV_T<MW_SIZE> Z = div(X, Y);
+			ss << "    X: " << X << "\n";
+			ss << "    Y: " << Y << "\n";
+			ss << " Quot: " << Z.quot << "\n";
+			ss << "  Rem: " << Z.rem << "\n\n";
+		}
+
+		{
+			std::array<UINT, MW_SIZE> dividend =
+				{0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF};
+			std::array<UINT, MW_SIZE> divisor =
+				{0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF};
+			MW::INT_T<MW_SIZE> X(dividend);
+			MW::INT_T<MW_SIZE> Y(divisor);
+			MW::DIV_T<MW_SIZE> Z = div(X, Y);
+			ss << "    X: " << X << "\n";
+			ss << "    Y: " << Y << "\n";
+			ss << " Quot: " << Z.quot << "\n";
+			ss << "  Rem: " << Z.rem << "\n\n";
+		}
+
+		{
+			std::array<UINT, MW_SIZE> dividend =
+				{0x0, 0x1, 0xFFFFFFFF, 0xFFFFFFFF};
+			std::array<UINT, MW_SIZE> divisor =
+				{0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF};
+			MW::INT_T<MW_SIZE> X(dividend);
+			MW::INT_T<MW_SIZE> Y(divisor);
+			MW::DIV_T<MW_SIZE> Z = div(X, Y);
+			ss << "    X: " << X << "\n";
+			ss << "    Y: " << Y << "\n";
+			ss << " Quot: " << Z.quot << "\n";
+			ss << "  Rem: " << Z.rem << "\n\n";
 		}
 
 		auto end = std::chrono::steady_clock::now();

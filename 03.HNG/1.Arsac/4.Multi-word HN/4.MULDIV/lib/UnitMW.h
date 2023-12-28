@@ -31,6 +31,13 @@ namespace MW
 		unsigned long long qw;	//   Quad Word part (1 x 64 bit)
 	};
 
+	template <int N>
+	struct DIV_T
+	{
+		INT_T<N> quot;      // Multi-word Quotient
+		INT_T<N> rem;		// Multi-word Reminder
+	};
+
 	//  Multi-word Integer Type
 	template <int N>
 	class INT_T
@@ -46,7 +53,8 @@ namespace MW
 		INT_T(const std::array<UINT, N>& s):arr(s) {}
 		INT_T(const std::string& s)	{*this = s;}
 
-		constexpr int digits(void) {return (sizeof(arr) * std::numeric_limits<byte>::digits);}
+		constexpr int digits(void)	const {return (sizeof(arr) * std::numeric_limits<byte>::digits);}
+		const INT_T max(void)		const {INT_T result; return result -= 1;}
 
 		INT_T& operator=(const INT_T& rhs)
 		{
@@ -441,32 +449,35 @@ namespace MW
 			return product;
 		}
 
-		struct DIV_T
-		{
-			INT_T<N> quot;      // Multi-word Quotient
-			UINT rem;           // Double Word Reminder
-		};
-
-		DIV_T div(const UINT& divisor)
+		DIV_T<N> div(const UINT& divisor)
 		//  Multi-word Division
 		//  Multi-word Dividend/Double Word Divisor
 		{
-			DIV_T result;
-			ULL pd = {0, 0};	// Partial Dividend
+			DIV_T<N> result;
 
-			for(auto i = 0; i < N; i++)
+			if(divisor == 0)
 			{
-				// MS Part ---> LS Part
-				pd.dw.lo = arr[i];
-
-				auto q = pd.qw / static_cast<unsigned long long>(divisor);
-				auto r = pd.qw % divisor;
-
-				result.quot.arr[i] = q;
-				pd.dw.hi = r;
+				//  OVERFLOW
+				result.quot -= 1;
 			}
+			else
+			{
+				ULL pd = {0, 0};	// Partial Dividend
 
-			result.rem = pd.dw.hi;
+				for(auto i = 0; i < N; i++)
+				{
+					// MS Part ---> LS Part
+					pd.dw.lo = arr[i];
+
+					auto q = pd.qw / static_cast<unsigned long long>(divisor);
+					auto r = pd.qw % divisor;
+
+					result.quot.arr[i] = q;
+					pd.dw.hi = r;
+				}
+
+				result.rem.arr[N - 1] = pd.dw.hi;
+			}
 			return result;
 		}
 
@@ -492,14 +503,14 @@ namespace MW
 
 			const INT_T radix = 10;     // Decimal Number System Radix
 
-			DIV_T q;
+			DIV_T<N> q;
 			q.quot = *this;
 			q.rem = 0;
 
 			while(q.quot >= radix)
 			{
 				q = q.quot.div(10);
-				v.push_back(q.rem);
+				v.push_back(q.rem.arr[N - 1]);
 			}
 			v.push_back(q.quot.arr[N - 1]);
 
@@ -529,22 +540,48 @@ namespace MW
 	}
 
 	template <int N>
-	INT_T<N> split(const INT_T<2*N>& rhs, INT_T<N>& hi)
+	void put_hi(INT_T<2*N>& lhs, const INT_T<N>& rhs)
+	//  Put <rhs> into the high part of the <lhs>
+	{
+		for(auto i = 0; i < N; i++)
+		{
+			// MS Part ---> LS Part
+			lhs.arr[i] = rhs.arr[i];   		//  high part
+		}
+	}
+
+	template <int N>
+	INT_T<N> split_hi(const INT_T<2*N>& rhs)
 	//  Split 2xN MW rhs to two N MW parts
 	//  Returns:
 	//  - hi, the high part;
-	//  - lo, the low part.
 	{
-		INT_T<N> lo;
+		INT_T<N> result;
 
 		for(auto i = 0; i < N; i++)
 		{
 			// MS Part ---> LS Part
-			hi.arr[i] = rhs.arr[i];
-			lo.arr[i] = rhs.arr[N + i];
+			result.arr[i] = rhs.arr[i];   	//  high part
 		}
 
-		return lo;
+		return result;
+	}
+
+	template <int N>
+	INT_T<N> split_lo(const INT_T<2*N>& rhs)
+	//  Split 2xN MW rhs to two N MW parts
+	//  Returns:
+	//  - lo, the low part.
+	{
+		INT_T<N> result;
+
+		for(auto i = 0; i < N; i++)
+		{
+			// MS Part ---> LS Part
+			result.arr[i] = rhs.arr[N + i];	//  low part
+		}
+
+		return result;
 	}
 
 	template <int N>
@@ -567,6 +604,47 @@ namespace MW
 	}
 
 	template <int N>
+	DIV_T<N> div(const INT_T<N>& dividend, const INT_T<N>& divisor)
+	//  Multi-word Implementation of Long Division
+	//  (Multi-word Dividend/Multi-word Divisor)
+	{
+		DIV_T<N> result;
+		const INT_T<N> zero;
+
+		if(static_cast<INT_T<N>>(divisor) == zero)
+		{   //  Division by zero
+			//  Set overflow
+			result.quot = result.quot.max();
+			result.rem  = result.rem.max();
+		}
+		else
+		{
+			INT_T<2*N> Dividend≈xt;    	//  Dividend Extended
+			Dividend≈xt = extend(dividend);
+
+			for(auto i = 0; i < dividend.digits(); i++)
+			{
+				result.quot <<= 1;		//	clear the next bit of the quotient
+				Dividend≈xt <<= 1;		//  take the next MS bit of the dividend
+
+				INT_T<N> hi = split_hi<N>(Dividend≈xt);
+				if(hi >= divisor)
+				{
+					hi -= divisor;		//	partial dividend
+					put_hi<N>(Dividend≈xt, hi);
+
+					result.quot |= 1;	//	set the next bit of the quotient
+				}
+			}
+
+			//  Final Reminder
+			result.rem = split_hi<N>(Dividend≈xt);
+		}
+
+		return result;
+	}
+
+	template <int N>
 	std::ostream& operator<<(std::ostream &os, const INT_T<N>& rhs)
 	{
 		os << "0x";
@@ -583,5 +661,4 @@ namespace MW
 }
 //---------------------------------------------------------------------------
 #endif
-
 
