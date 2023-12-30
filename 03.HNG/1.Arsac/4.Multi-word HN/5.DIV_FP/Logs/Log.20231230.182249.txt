@@ -1,0 +1,11 @@
+MW Namespace ver.0.21
+MW Fixed-point Division Test
+
+    X: 3
+    Y: 11
+ Quot: 0
+  Rem: 3
+Ratio: 0.272727272
+
+T: 176, us
+

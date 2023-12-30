@@ -183,6 +183,13 @@ Status: Completed
         Multi-word HN Namespace ver.0.85
         Multi-word Namespace ver.0.19
       Status: Completed
+      
+      5.DIV_FP
+        Project: hng_div_fp
+        Multi-word Fixed-point Division Test
+        Multi-word HN Namespace ver.0.85
+        Multi-word Namespace ver.0.21
+      Status: Under Development
   +++
   2.Triplex
   Generating the next Hamming Number based on the last characteristic triplets
