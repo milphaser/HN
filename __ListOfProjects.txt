@@ -189,7 +189,7 @@ Status: Completed
         Multi-word Fixed-point Division Test
         Multi-word HN Namespace ver.0.85
         Multi-word Namespace ver.0.21
-      Status: Under Development
+      Status: Completed
   +++
   2.Triplex
   Generating the next Hamming Number based on the last characteristic triplets

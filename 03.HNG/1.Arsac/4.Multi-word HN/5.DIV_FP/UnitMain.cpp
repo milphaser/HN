@@ -3,7 +3,7 @@
 //---------------------------------------------------------------------------
 //	Multi-word Namespace ver.0.21
 //
-//  Status: Under Development
+//  Status: Completed
 //---------------------------------------------------------------------------
 #include <vcl.h>
 #pragma hdrstop
@@ -54,20 +54,19 @@ int _tmain(int argc, _TCHAR* argv[])
 	{
 		auto beg = std::chrono::steady_clock::now();
 
-		{
-			std::array<UINT, MW_SIZE> dividend =
-				{3};
-			std::array<UINT, MW_SIZE> divisor =
-				{111};
-			MW::INT_T<MW_SIZE> X(dividend);
-			MW::INT_T<MW_SIZE> Y(divisor);
-			MW::DIV_T<MW_SIZE> Z = div(X, Y);
-			ss << "    X: " << X.to_dec_string() << "\n";
-			ss << "    Y: " << Y.to_dec_string() << "\n";
-			ss << " Quot: " << Z.quot.to_dec_string() << "\n";
-			ss << "  Rem: " << Z.rem.to_dec_string() << "\n";
+		MW::INT_T<MW_SIZE> X[] = {3, 33, 111, 1000, 1110};
+		MW::INT_T<MW_SIZE> Y = 111;
 
-			std::pair<MW::INT_T<MW_SIZE>, MW::INT_T<MW_SIZE>> ratio = MW::div_fp(X, Y);
+		for(auto i = 0; i < sizeof(X)/sizeof(MW::INT_T<MW_SIZE>); i++)
+		{
+			ss << "    X: " << X[i].to_dec_string() << "\n";
+			ss << "    Y: " << Y.to_dec_string() << "\n";
+
+			MW::DIV_T<MW_SIZE> Z = div(X[i], Y);
+			ss << " Quot: " << Z.quot.to_dec_string()
+			   << " Rem: " << Z.rem.to_dec_string() << "\n";
+
+			std::pair<MW::INT_T<MW_SIZE>, MW::INT_T<MW_SIZE>> ratio = MW::div_fp(X[i], Y);
 			ss << "Ratio: " << to_dec_string(ratio) << "\n";
 
 			ss << std::endl;

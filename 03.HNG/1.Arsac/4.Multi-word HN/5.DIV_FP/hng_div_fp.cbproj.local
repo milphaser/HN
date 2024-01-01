@@ -18,8 +18,8 @@
     <Transaction>1899.12.30 00:00:00.000.296,C:\Z.HOBBY TIME\50.Puzzles\HN\03.HNG\1.Arsac\4.Multi-word HN\2.Conversion\hng_arsac_max.cbproj=C:\Z.HOBBY TIME\50.Puzzles\HN\03.HNG\1.Arsac\4.Multi-word HN\2.Conversion\hng_arsac_d2b.cbproj</Transaction>
     <Transaction>1899.12.30 00:00:00.000.431,C:\Z.HOBBY TIME\50.Puzzles\HN\03.HN_NXT\1.Arsac\1\hng_arsac.cbproj=C:\Z.HOBBY TIME\50.Puzzles\HN\03.HN_NXT\1.Arsac\1\hn_nxt_arsac.cbproj</Transaction>
     <Transaction>1899.12.30 00:00:00.000.287,C:\Z.HOBBY TIME\50.Puzzles\HN\03.HNG\1.Arsac\4.Multi-word HN\4.MULDIV\hng_muldiv.cbproj=C:\Z.HOBBY TIME\50.Puzzles\HN\03.HNG\1.Arsac\4.Multi-word HN\4.MULDIV\hng_mul.cbproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.853,C:\Z.HOBBY TIME\50.Puzzles\HN\03.HN_NXT\1.Arsac\1\hn_nxt_arsac.cbproj=C:\Z.HOBBY TIME\50.Puzzles\HN\03.HN_NXT\1.Arsac\1\Temp.cbproj</Transaction>
     <Transaction>1899.12.30 00:00:00.000.298,C:\Z.HOBBY TIME\50.Puzzles\HN\03.HNG\1.Arsac\3.HN ver.0.75\UnitHN.cpp=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.853,C:\Z.HOBBY TIME\50.Puzzles\HN\03.HN_NXT\1.Arsac\1\hn_nxt_arsac.cbproj=C:\Z.HOBBY TIME\50.Puzzles\HN\03.HN_NXT\1.Arsac\1\Temp.cbproj</Transaction>
   </Transactions>
 	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="LIB"/>
