@@ -120,7 +120,7 @@ namespace MW
 			return *this;
 		}
 
-		bool operator==(const INT_T& rhs)
+		bool operator==(const INT_T& rhs) const
 		{
 			for(auto i = 0; i < N; i++)
 			{
@@ -130,12 +130,12 @@ namespace MW
 			return true;
 		}
 
-		bool operator!=(const INT_T& rhs)
+		bool operator!=(const INT_T& rhs) const
 		{
 			return !(*this == rhs);
 		}
 
-		bool operator<(const INT_T& rhs)
+		bool operator<(const INT_T& rhs) const
 		{
 			for(auto i = 0; i < N; i++)
 			{
@@ -148,17 +148,17 @@ namespace MW
 			return false;
 		}
 
-		bool operator>(const INT_T& rhs)
+		bool operator>(const INT_T& rhs) const
 		{
 			return !((*this < rhs) || (*this == rhs));
 		}
 
-		bool operator<=(const INT_T& rhs)
+		bool operator<=(const INT_T& rhs) const
 		{
 			return !(*this > rhs);
 		}
 
-		bool operator>=(const INT_T& rhs)
+		bool operator>=(const INT_T& rhs) const
 		{
 			return !(*this < rhs);
 		}
@@ -275,7 +275,7 @@ namespace MW
 			return *this;
 		}
 
-		INT_T min(const INT_T& rhs)
+		INT_T min(const INT_T& rhs) const
 		{
 			if(*this <= rhs)
 				return *this;
@@ -283,7 +283,7 @@ namespace MW
 				return rhs;
 		}
 
-		INT_T max(const INT_T& rhs)
+		INT_T max(const INT_T& rhs) const
 		{
 			if(*this >= rhs)
 				return *this;
@@ -291,7 +291,7 @@ namespace MW
 				return rhs;
 		}
 
-		INT_T mul_2(void)
+		INT_T mul_2(void) const
 		//  Multi-word Multiplication by 2
 		//  NOTE: High part of the product is truncated
 		{
@@ -316,7 +316,7 @@ namespace MW
 			return product;
 		}
 
-		INT_T mul_3(void)
+		INT_T mul_3(void) const
 		//  Multi-word Multiplication by 3
 		//  NOTE: High part of the product is truncated
 		{
@@ -342,7 +342,7 @@ namespace MW
 			return product;
 		}
 
-		INT_T mul_5(void)
+		INT_T mul_5(void) const
 		//  Multi-word Multiplication by 5
 		//  NOTE: High part of the product is truncated
 		{
@@ -368,7 +368,7 @@ namespace MW
 			return product;
 		}
 
-		INT_T mul_10(void)
+		INT_T mul_10(void) const
 		//  Multi-word Multiplication by 10
 		//  NOTE: High part of the product is truncated
 		{
@@ -396,7 +396,7 @@ namespace MW
 			return product;
 		}
 
-		INT_T mul_10(UINT exp)
+		INT_T mul_10(UINT exp) const
 		//  Multi-word Multiplication by (10 ** exp)
 		//  NOTE: High part of the product is truncated
 		{
@@ -427,7 +427,7 @@ namespace MW
 			return product;
 		}
 
-		INT_T mul(const UINT& multiplier)
+		INT_T mul(const UINT& multiplier) const
 		//  Multi-word Multiplication with Double Word Multiplier
 		//  NOTE: High part of the product is truncated
 		{
@@ -452,7 +452,7 @@ namespace MW
 			return product;
 		}
 
-		DIV_T<N> div(const UINT& divisor)
+		DIV_T<N> div(const UINT& divisor) const
 		//  Multi-word Division
 		//  Multi-word Dividend/Double Word Divisor
 		{
@@ -484,7 +484,7 @@ namespace MW
 			return result;
 		}
 
-		std::string to_hex_string(void)
+		std::string to_hex_string(void) const
 		{
 			std::stringstream oss;
 			auto cnt = 1;
@@ -500,7 +500,7 @@ namespace MW
 			return oss.str();
 		}
 
-		std::string to_dec_string(const bool fraction = false)
+		std::string to_dec_string(const bool fraction = false) const
 		{
 			std::vector<UINT> v;
 

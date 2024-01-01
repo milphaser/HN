@@ -52,10 +52,10 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	if(of)
 	{
-		auto beg = std::chrono::steady_clock::now();
-
 		MW::INT_T<MW_SIZE> X[] = {3, 33, 111, 1000, 1110};
 		MW::INT_T<MW_SIZE> Y = 111;
+
+		auto beg = std::chrono::steady_clock::now();
 
 		for(auto i = 0; i < sizeof(X)/sizeof(MW::INT_T<MW_SIZE>); i++)
 		{
