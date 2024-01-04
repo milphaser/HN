@@ -33,9 +33,6 @@ const int MW_SIZE = 1;	// Multi-word Size in Double Words [ 32 bits]
 //---------------------------------------------------------------------------
 int _tmain(int argc, _TCHAR* argv[])
 {
-	std::cout << "Multi-word Namespace ver." << MW::ver << "\n";
-	std::cout << "Multi-word Fixed-point Division Test\n";
-
 	auto tp = std::chrono::system_clock::now();
 	auto tt = std::chrono::system_clock::to_time_t(tp);
 
@@ -46,14 +43,18 @@ int _tmain(int argc, _TCHAR* argv[])
 	std::ofstream of(fn.str());		// Output log file
 	std::stringstream ss;
 
-	ss << "MW Namespace ver." << MW::ver << "\n";
-	ss << "MW Fixed-point Division Test\n\n";
 	std::cout << "Please, wait...\n\n";
+
+	ss << "MW Namespace ver." << MW::ver << "\n";
+	ss << "MW Fixed-point Division Test\n";
 
 	if(of)
 	{
-		MW::INT_T<MW_SIZE> X[] = {3, 33, 111, 1000, 1110};
-		MW::INT_T<MW_SIZE> Y = 111;
+		MW::INT_T<MW_SIZE> X[] = {3, 33, 111, 1000, 1110, 1111};
+		MW::INT_T<MW_SIZE> Y = 1111;
+
+		ss << "Bits #" << Y.digits << " | ";
+		ss << "Decimal Digits #" << Y.digits_dec << "\n\n";
 
 		auto beg = std::chrono::steady_clock::now();
 

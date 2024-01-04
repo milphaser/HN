@@ -1,0 +1,36 @@
+MW Namespace ver.0.21
+MW Fixed-point Division Test
+Bits #32 | Decimal Digits #9
+
+    X: 3
+    Y: 1111
+ Quot: 0 Rem: 3
+Ratio: 0.002700270
+
+    X: 33
+    Y: 1111
+ Quot: 0 Rem: 33
+Ratio: 0.029702970
+
+    X: 111
+    Y: 1111
+ Quot: 0 Rem: 111
+Ratio: 0.099909990
+
+    X: 1000
+    Y: 1111
+ Quot: 0 Rem: 1000
+Ratio: 0.900090009
+
+    X: 1110
+    Y: 1111
+ Quot: 0 Rem: 1110
+Ratio: 0.999099909
+
+    X: 1111
+    Y: 1111
+ Quot: 1 Rem: 0
+Ratio: 1.000000000
+
+T: 1981, us
+
