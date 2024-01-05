@@ -195,3 +195,15 @@ Status: Completed
   Generating the next Hamming Number based on the last characteristic triplets
   Status: Abandoned
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+04.FNG +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Multi-word Fibonacci Number Generator
+
+  1.MW ver.0.19
+    Project: fng_max
+  Status Completed
+  
+  2.MW ver.0.21
+    Project: fng_max
+  Status Completed
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
