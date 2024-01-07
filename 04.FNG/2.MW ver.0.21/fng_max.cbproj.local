@@ -1,25 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899.12.30 00:00:00.000.889,=C:\Z.HOBBY TIME\50.Puzzles\HN\03.HNG\1.Arsac\3.HN ver.0.76\1.nxt\1.int32\Unit1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.259,=C:\Z.HOBBY TIME\50.Puzzles\HN\03.HNG\1.Arsac\1\2\Unit1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.737,C:\Z.HOBBY TIME\50.Puzzles\FN\01.FNG\hng_arsac_max.cbproj=C:\Z.HOBBY TIME\50.Puzzles\FN\01.FNG\fng_max.cbproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.656,=C:\Z.HOBBY TIME\50.Puzzles\HN\03.HNG\1.Arsac\3.HN ver.0.76\1.nxt\1.int32\Unit1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.961,C:\Z.HOBBY TIME\50.Puzzles\HN\03.HNG\1.Arsac\4.Multi-word HN\MAX\hng_arsac.cbproj=C:\Z.HOBBY TIME\50.Puzzles\HN\03.HNG\1.Arsac\4.Multi-word HN\MAX\hng_arsac_max.cbproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.685,=C:\Z.HOBBY TIME\50.Puzzles\HN\03.HNG\1.Arsac\4.HN.INT_T\MAX\LIB\UnitHN.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.853,C:\Z.HOBBY TIME\50.Puzzles\HN\03.HN_NXT\1.Arsac\1\hn_nxt_arsac.cbproj=C:\Z.HOBBY TIME\50.Puzzles\HN\03.HN_NXT\1.Arsac\1\Temp.cbproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.102,C:\Z.HOBBY TIME\50.Puzzles\HN\03.HNG\1.Arsac\1\2\UnitHN.h=C:\Z.HOBBY TIME\50.Puzzles\HN\03.HNG\1.Arsac\1\2\Unit1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.375,=C:\Z.HOBBY TIME\50.Puzzles\HN\03.HNG\1.Arsac\1\2\UnitHN.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.456,C:\Z.HOBBY TIME\50.Puzzles\HN\03.HNG\1.Arsac\1\2\UnitHN.cpp=</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.102,C:\Z.HOBBY TIME\50.Puzzles\HN\03.HNG\1.Arsac\1\2\UnitHN.cpp=C:\Z.HOBBY TIME\50.Puzzles\HN\03.HNG\1.Arsac\1\2\Unit1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.750,=C:\Z.HOBBY TIME\50.Puzzles\HN\03.HNG\1.Arsac\4.HN.INT_T\MAX\LIB\UnitMW.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.743,=C:\Z.HOBBY TIME\50.Puzzles\HN\03.HNG\1.Arsac\3.HN ver.0.76\1.nxt\1.int32\UnitHN.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.431,C:\Z.HOBBY TIME\50.Puzzles\HN\03.HN_NXT\1.Arsac\1\hng_arsac.cbproj=C:\Z.HOBBY TIME\50.Puzzles\HN\03.HN_NXT\1.Arsac\1\hn_nxt_arsac.cbproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.298,C:\Z.HOBBY TIME\50.Puzzles\HN\03.HNG\1.Arsac\3.HN ver.0.75\UnitHN.cpp=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.527,=C:\Users\Milen\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.854,C:\Users\Milen\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\1.Rational approximations\TEMPLATE\template.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.404,C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\1.Rational approximations\TEMPLATE\File1.h=C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\1.Rational approximations\TEMPLATE\UnitMain.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.969,=C:\Z.HOBBY TIME\TEMPLATE2\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.217,=C:\Users\Milen\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.842,C:\Users\Milen\Documents\Embarcadero\Studio\Projects\File1.cpp=C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\1.Rational approximations\TEMPLATE\File1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.857,=C:\Z.HOBBY TIME\TEMPLATE2\UnitMain.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.713,C:\Z.HOBBY TIME\TEMPLATE2\UnitMain.cpp=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.702,C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\TEMPLATE\template2.cbproj=C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\TEMPLATE\template.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.674,=C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\1.Rational approximations\TEMPLATE\File1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.019,C:\Z.HOBBY TIME\TEMPLATE2\UnitMain.h=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.228,C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\1.Rational approximations\TEMPLATE\File1.cpp=C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\1.Rational approximations\TEMPLATE\UnitMain.cpp</Transaction>
+    <Transaction>2024.01.07 10:37:42.622,C:\Z.HOBBY TIME\50.Puzzles\HN\04.FNG\2.MW ver.0.21\fng_max.cbproj=C:\Z.HOBBY TIME\50.Puzzles\HN\04.FNG\2.MW ver.0.21\template2.cbproj</Transaction>
+    <Transaction>2024.01.07 10:38:25.019,=C:\Z.HOBBY TIME\50.Puzzles\HN\04.FNG\2.MW ver.0.21\lib\UnitMW.h</Transaction>
   </Transactions>
 	<ProjectSortOrder AutoSort="0" SortType="0">
-    <File Path="LIB"/>
-    <File Path="LIB\UnitMW.h"/>
+    <File Path="lib"/>
+    <File Path="lib\UnitMW.h"/>
     <File Path="UnitMain.cpp"/>
     <File Path="UnitMain.cpp"/>
     <File Path="UnitMain.h"/>

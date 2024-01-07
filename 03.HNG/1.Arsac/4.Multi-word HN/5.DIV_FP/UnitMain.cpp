@@ -5,7 +5,7 @@
 //
 //  Status: Completed
 //---------------------------------------------------------------------------
-#include <vcl.h>
+#include <tchar.h>
 #pragma hdrstop
 #pragma argsused
 //---------------------------------------------------------------------------
@@ -13,11 +13,8 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-
-//#include <chrono>
-//#include <numeric>
 //---------------------------------------------------------------------------
-#include "UnitHN.h"
+#include "UnitMW.h"
 #include "UnitMain.h"
 //---------------------------------------------------------------------------
 const int MW_SIZE = 1;	// Multi-word Size in Double Words [ 32 bits]
@@ -43,10 +40,13 @@ int _tmain(int argc, _TCHAR* argv[])
 	std::ofstream of(fn.str());		// Output log file
 	std::stringstream ss;
 
-	std::cout << "Please, wait...\n\n";
-
 	ss << "MW Namespace ver." << MW::ver << "\n";
-	ss << "MW Fixed-point Division Test\n";
+	ss << "MW Fixed-point Division Test\n\n";
+
+	std::cout << ss.str();
+    ss.str("");
+
+	std::cout << "Please, wait...\n\n";
 
 	if(of)
 	{
@@ -98,5 +98,4 @@ int _tmain(int argc, _TCHAR* argv[])
 	return 0;
 }
 //---------------------------------------------------------------------------
-//#pragma package(smart_init)
 

@@ -55,7 +55,7 @@ namespace MW
 		INT_T(const std::array<UINT, N>& s):arr(s) {}
 		INT_T(const std::string& s)	{*this = s;}
 
-		const int digits			= sizeof(arr) * std::numeric_limits<byte>::digits;
+		const int digits			= sizeof(arr) * 8;
 		const UINT digits_dec       = static_cast<UINT>(digits/(10./std::log10(1024)));
 		const INT_T max(void)		const {INT_T result; return result -= 1;}
 
@@ -603,7 +603,7 @@ namespace MW
 			INT_T<2*N> pp;			// Partial Product
 			// MS Part <--- LS Part
 			pp = multiplicand_ext.mul(multiplier.arr[N - i - 1]);
-			pp <<= i * std::numeric_limits<byte>::digits * 4;
+			pp <<= i * std::numeric_limits<UINT>::digits;
 			product += pp;
 		}
 

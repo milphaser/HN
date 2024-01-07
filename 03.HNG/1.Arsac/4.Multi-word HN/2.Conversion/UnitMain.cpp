@@ -4,7 +4,7 @@
 //	Multi-word HN Namespace ver.0.85
 //	Multi-word Namespace ver.0.15 to ver.0.17 Evolution
 //
-//  Status: Under Development
+//  Status: Completed
 //---------------------------------------------------------------------------
 #include <vcl.h>
 #pragma hdrstop
