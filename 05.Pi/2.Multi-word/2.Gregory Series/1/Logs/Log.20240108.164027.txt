@@ -1,0 +1,7 @@
+MW Namespace ver.0.21
+Pi Calculation [Taylor Series Approximation]
+
+Pi/4 = 0.785398163
+Iterations #500000000
+Bits #32 | Decimal Digits #9
+Tdbg = 17 min || 1053 sec || 1053082 ms

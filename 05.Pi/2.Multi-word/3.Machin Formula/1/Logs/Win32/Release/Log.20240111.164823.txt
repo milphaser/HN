@@ -1,0 +1,11 @@
+MW Namespace ver.0.22
+Pi Calculation [Machin Formula]
+
+Pi/4 = 0.78539816339744830961566084581987572104929234984377645524373614807695410157154
+
+Iterations 1/5   #54
+Iterations 1/239 #16
+
+Bits #256 | Decimal Digits #77
+Trel = 978 us
+32-bit Executable

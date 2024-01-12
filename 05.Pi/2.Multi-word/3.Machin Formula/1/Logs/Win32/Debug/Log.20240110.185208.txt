@@ -1,0 +1,12 @@
+MW Namespace ver.0.22
+Pi Calculation [Machin Formula]
+
+Pi/4 = 0.7853981633974483096
+
+arctan(1/5)      = 0.1973955598498807583
+Iterations 1/5   #13
+arctan(1/239)    = 0.0041840760020747238
+Iterations 1/239 #4
+
+Bits #64 | Decimal Digits #19
+Tdbg = 180 us

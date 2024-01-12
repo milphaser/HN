@@ -1,0 +1,7 @@
+Pi Calculation
+Taylor Series Approximation/32 bit Integer Implementation
+
+Pi/4 = 0.785398163
+Iterations #500000000
+Bits #32 | Decimal Digits #9
+T = 129040 ms

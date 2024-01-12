@@ -1,0 +1,2 @@
+Pi with Machin's Formula
+https://oeis.org/A003881
