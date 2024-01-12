@@ -233,8 +233,20 @@ Multi-word Fibonacci Number Generator
 Multi-word Pi Number Generator
 
   1.Single-word
+    1.Gregory Series
+      1.
+      2.
+      3.
   Status Completed
   
   2.Multi-word
+    1.Rational approximations
+      Pi-37
+    2.Gregory Series
+      1.
+      2.
+    3.Machin Formula
+      1.
+      2.
   Status Under Development
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
