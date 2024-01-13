@@ -24,7 +24,7 @@
 //---------------------------------------------------------------------------
 #include "UnitMain.h"
 //---------------------------------------------------------------------------
-//const int MW_SIZE = 1;		// Multi-word Size in Double Words [     32 bits]
+const int MW_SIZE = 1;		// Multi-word Size in Double Words [     32 bits]
 //const int MW_SIZE = 2;		// Multi-word Size in Double Words [     64 bits]
 //const int MW_SIZE = 4;		// Multi-word Size in Double Words [    128 bits]
 //const int MW_SIZE = 8;		// Multi-word Size in Double Words [    256 bits]
@@ -38,7 +38,7 @@
 //const int MW_SIZE = 2048;		// Multi-word Size in Double Words [  65536 bits]
 //const int MW_SIZE = 4096;		// Multi-word Size in Double Words [ 131072 bits]
 //const int MW_SIZE = 8192;		// Multi-word Size in Double Words [ 262144 bits]
-const int MW_SIZE = 16384;	// Multi-word Size in Double Words [ 524288 bits]
+//const int MW_SIZE = 16384;	// Multi-word Size in Double Words [ 524288 bits]
 //const int MW_SIZE = 32768;	// Multi-word Size in Double Words [1048576 bits]
 //---------------------------------------------------------------------------
 int _tmain(int argc, _TCHAR* argv[])
@@ -63,7 +63,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	{
 		auto beg = std::chrono::steady_clock::now();
 
-		MW::UINT iter_1_5, iter_1_239 = 0;
+		MW::UINT iter_1_5 = 0, iter_1_239 = 0;
 
 		std::unique_ptr<MW::INT_T<2*MW_SIZE>> arctan_1_5 = std::make_unique<MW::INT_T<2*MW_SIZE>>(gregory_arctan<MW_SIZE>(5, iter_1_5));
 		std::unique_ptr<MW::INT_T<2*MW_SIZE>> arctan_1_239 = std::make_unique<MW::INT_T<2*MW_SIZE>>(gregory_arctan<MW_SIZE>(239, iter_1_239));

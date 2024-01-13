@@ -62,7 +62,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	{
 		auto beg = std::chrono::steady_clock::now();
 
-		MW::UINT iter_1_5, iter_1_239 = 0;
+		MW::UINT iter_1_5 = 0, iter_1_239 = 0;
 		static auto arctan_1_5 = gregory_arctan<MW_SIZE>(5, iter_1_5);
 		static auto arctan_1_239 = gregory_arctan<MW_SIZE>(239, iter_1_239);
 
