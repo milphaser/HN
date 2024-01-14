@@ -242,11 +242,14 @@ Multi-word Pi Number Generator
   2.Multi-word
     1.Rational approximations
       Pi-37
+      
     2.Gregory Series
-      1.
-      2.
+      1.MW ver.0.21
+      2.MW ver.0.21
+      
     3.Machin Formula
-      1.
-      2.
+      1.MW ver.0.22
+      2.MW ver.0.22
+      3.MW ver.0.25
   Status Under Development
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.674,=C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\1.Rational approximations\TEMPLATE\File1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.527,=C:\Users\Milen\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.100,=C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\1.Rational approximations\1.Pi(37)\lib\UnitMW.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.884,=C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\1.Rational approximations\1.Pi(37)\UnitMain.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.973,C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\1.Leibniz\pi-taylor.cbproj=C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\1.Leibniz\Pi-37.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.435,C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\1.Rational approximations\1.Pi(37)\UnitMain.h=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.404,C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\1.Rational approximations\TEMPLATE\UnitMain.h=C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\1.Rational approximations\TEMPLATE\File1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.819,C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\1.Rational approximations\1.Pi(37)\Pi-37.cbproj=C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\1.Rational approximations\1.Pi(37)\template2.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.217,=C:\Users\Milen\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.610,C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\1.Rational approximations\1.Pi(37)\UnitMain.cpp=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.764,=C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\1.Rational approximations\1.Pi(37)\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.690,C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\1.Rational approximations\1.Pi(37)\Unit1.cpp=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.854,C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\1.Rational approximations\TEMPLATE\template.cbproj=C:\Users\Milen\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.842,C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\1.Rational approximations\TEMPLATE\File1.cpp=C:\Users\Milen\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.766,C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\1.Rational approximations\1.Pi(37)\Unit1.cpp=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.702,C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\TEMPLATE\template.cbproj=C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\TEMPLATE\template2.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.603,C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\3.Machin Formula\pi-machin.cbproj=C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\3.Machin Formula\pi-taylor.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.228,C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\1.Rational approximations\TEMPLATE\UnitMain.cpp=C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\1.Rational approximations\TEMPLATE\File1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.065,=C:\Z.HOBBY TIME\50.Puzzles\HN\05.Pi\2.Multi-word\1.Rational approximations\1.Pi(37)\Unit1.cpp</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="lib"/>
+    <File Path="lib\UnitMW.h"/>
+    <File Path="UnitMain.cpp"/>
+    <File Path="UnitMain.cpp"/>
+    <File Path="UnitMain.h"/>
+  </ProjectSortOrder>
+</BorlandProject>
